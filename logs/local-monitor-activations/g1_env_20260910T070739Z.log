@@ -1,0 +1,378 @@
+
+=== hardware ===
+{
+ "nvidia_smi": "NVIDIA GeForce RTX 5090, 580.159.03, 32607 MiB, 12.0",
+ "torch": "2.14.0+cu130",
+ "torch_cuda": "13.0",
+ "cudnn": 92400,
+ "device_name": "NVIDIA GeForce RTX 5090",
+ "capability": [
+  12,
+  0
+ ],
+ "total_memory_bytes": 33668857856,
+ "total_memory_gib": 31.36,
+ "n_gpus": 1,
+ "cpu_count": 64
+}
+
+=== storage ===
+{
+ "HF_HOME": "/workspace/hf",
+ "hf_home_on_workspace": true,
+ "workspace_free_gib": 592587.9,
+ "workspace_total_gib": 2158751.2,
+ "checkpoints_dir": "checkpoints/local-monitor-activations",
+ "data_api_dir": "checkpoints/local-monitor-activations/data/api",
+ "data_export_dir": "checkpoints/local-monitor-activations/data/export"
+}
+
+=== packages ===
+{
+ "installed": {
+  "torch": "2.14.0+cu130",
+  "transformers": "5.17.0",
+  "tokenizers": "0.23.2",
+  "accelerate": "1.15.0",
+  "safetensors": "0.8.0",
+  "numpy": "2.5.3",
+  "triton": "3.8.0",
+  "kernels": "0.16.1",
+  "huggingface_hub": "1.30.0",
+  "nnsight": "0.7.0",
+  "flash_attn": null
+ },
+ "requirements_txt_pins": {
+  "torch": "2.14.0",
+  "transformers": "5.17.0",
+  "tokenizers": "0.23.2",
+  "accelerate": "1.15.0",
+  "safetensors": "0.8.0",
+  "numpy": "2.5.3"
+ },
+ "pin_match": {
+  "torch": true,
+  "transformers": true,
+  "tokenizers": true,
+  "accelerate": true,
+  "safetensors": true,
+  "numpy": true
+ },
+ "requirements_txt": "experiments/logit-curve-replication/gpu/requirements.txt"
+}
+
+=== mirror ===
+  GET https://repro.linuxarena.ai/api/public/lean/f25f1eafacd749e89f1736f26d3df751
+    1915687 bytes in 3s
+{
+ "side": "honest",
+ "endpoint": "lean",
+ "run_id": "f25f1eafacd749e89f1736f26d3df751",
+ "path": "checkpoints/local-monitor-activations/data/api/lean_f25f1eafacd749e89f1736f26d3df751.json",
+ "fetched_now": true,
+ "bytes": 1915687,
+ "sha256": "c9c4b3fb2661b800db6d5bccaa89ce4f5e1fdc3bddbe67b6bf68924f64bb9822",
+ "top_level_keys": [
+  "fingerprint",
+  "trajectories"
+ ],
+ "n_trajectories": 200,
+ "n_actions": 12675,
+ "n_actions_with_sus_score": 12675,
+ "server_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e",
+ "recomputed_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e",
+ "manifest_monitor_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e",
+ "server_matches_manifest": true,
+ "recompute_matches_manifest": true
+}
+  GET https://repro.linuxarena.ai/api/public/monitor-data/f25f1eafacd749e89f1736f26d3df751
+    25386404 bytes in 3s
+{
+ "side": "honest",
+ "endpoint": "monitor-data",
+ "run_id": "f25f1eafacd749e89f1736f26d3df751",
+ "path": "checkpoints/local-monitor-activations/data/api/monitor-data_f25f1eafacd749e89f1736f26d3df751.json",
+ "fetched_now": true,
+ "bytes": 25386404,
+ "sha256": "8011dcff3eaabbd308a8bada74ff69cad5546a76f1baf83c409fdea02517e1fd",
+ "top_level_keys": [
+  "trajectories"
+ ],
+ "n_trajectories": 200,
+ "n_actions": 12675,
+ "n_actions_with_sus_score": 12675,
+ "recomputed_fingerprint": "3001fb1e1086ad46701049fa211bead0a74c0a2245169b4c3038f782dea36db9",
+ "recompute_matches_manifest": false
+}
+  GET https://repro.linuxarena.ai/api/public/lean/30d53f5ae4f7444687459d13ccc61101
+    776284 bytes in 2s
+{
+ "side": "attack",
+ "endpoint": "lean",
+ "run_id": "30d53f5ae4f7444687459d13ccc61101",
+ "path": "checkpoints/local-monitor-activations/data/api/lean_30d53f5ae4f7444687459d13ccc61101.json",
+ "fetched_now": true,
+ "bytes": 776284,
+ "sha256": "c5b75c3a9a8cd14f844e6ad62ebb2a81f5ba11c5624be37ededa2af398121864",
+ "top_level_keys": [
+  "fingerprint",
+  "trajectories"
+ ],
+ "n_trajectories": 92,
+ "n_actions": 5097,
+ "n_actions_with_sus_score": 5097,
+ "server_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+ "recomputed_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+ "manifest_monitor_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+ "server_matches_manifest": true,
+ "recompute_matches_manifest": true
+}
+  GET https://repro.linuxarena.ai/api/public/monitor-data/30d53f5ae4f7444687459d13ccc61101
+    10306406 bytes in 3s
+{
+ "side": "attack",
+ "endpoint": "monitor-data",
+ "run_id": "30d53f5ae4f7444687459d13ccc61101",
+ "path": "checkpoints/local-monitor-activations/data/api/monitor-data_30d53f5ae4f7444687459d13ccc61101.json",
+ "fetched_now": true,
+ "bytes": 10306406,
+ "sha256": "e9e555c2a7dbc3af6f7aba76eb89a227427c2774a58bd888764223c02acc2a69",
+ "top_level_keys": [
+  "trajectories"
+ ],
+ "n_trajectories": 92,
+ "n_actions": 5097,
+ "n_actions_with_sus_score": 5097,
+ "recomputed_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+ "recompute_matches_manifest": true
+}
+{
+ "dir": "checkpoints/local-monitor-activations/data/export",
+ "files": {
+  "attack.jsonl": {
+   "expected_sha256": "c8a4a22b0e7ec7a94f6b4c9041f0aa42390a39a25d617672e6e31be98e194839",
+   "expected_bytes": 16408559,
+   "present": false
+  },
+  "honest.jsonl": {
+   "expected_sha256": "cbc0994d67d170585964913d836a1c9993c39497745bc7090fd96b5b5475d156",
+   "expected_bytes": 41023281,
+   "present": false
+  },
+  "trajectories.jsonl": {
+   "expected_sha256": "38e00f1434e7681425c42a8bc599855a842320f5723cd25cb1cad23691d91c93",
+   "expected_bytes": 3734996,
+   "present": false
+  }
+ },
+ "note": "honest.jsonl / attack.jsonl / trajectories.jsonl are built by track L's data_export/export.py from the mirror PLUS the 16 GB HF dump (tool arguments and task descriptions are not on the mirror). They must be copied from the laptop; run_monitor.py refuses to start without them."
+}
+
+=== model ===
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 638.73it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{
+ "class": "TokenizersBackend",
+ "vocab_size": 200019,
+ "digit_tokens": {
+  "0": [
+   15
+  ],
+  "1": [
+   16
+  ],
+  "2": [
+   17
+  ],
+  "3": [
+   18
+  ],
+  "4": [
+   19
+  ],
+  "5": [
+   20
+  ],
+  "6": [
+   21
+  ],
+  "7": [
+   22
+  ],
+  "8": [
+   23
+  ],
+  "9": [
+   24
+  ],
+  "10": [
+   702
+  ],
+  " 10": [
+   220,
+   702
+  ],
+  " 1": [
+   220,
+   16
+  ],
+  "10</": [
+   702,
+   808
+  ]
+ },
+ "'10'_is_single_token": true,
+ "eos_token": "<|return|>",
+ "eos_token_id": 200002,
+ "pad_token_id": 199999,
+ "special": {
+  "<|return|>": 200002,
+  "<|call|>": 200012,
+  "<|start|>": 200006,
+  "<|channel|>": 200005,
+  "<|message|>": 200008,
+  "<|end|>": 200007
+ },
+ "chat_template_preview": {
+  "text": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-10\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>hi<|end|><|start|>assistant",
+  "n_tokens": 68,
+  "last_8": [
+   {
+    "id": 200007,
+    "tok": "<|end|>"
+   },
+   {
+    "id": 200006,
+    "tok": "<|start|>"
+   },
+   {
+    "id": 1428,
+    "tok": "user"
+   },
+   {
+    "id": 200008,
+    "tok": "<|message|>"
+   },
+   {
+    "id": 3686,
+    "tok": "hi"
+   },
+   {
+    "id": 200007,
+    "tok": "<|end|>"
+   },
+   {
+    "id": 200006,
+    "tok": "<|start|>"
+   },
+   {
+    "id": 173781,
+    "tok": "assistant"
+   }
+  ]
+ }
+}
+Fetching 42 files:   0%|          | 0/42 [00:00<?, ?it/s]Fetching 42 files:   2%|▏         | 1/42 [00:00<00:11,  3.45it/s]Fetching 42 files:   5%|▍         | 2/42 [00:00<00:07,  5.10it/s]Fetching 42 files:  24%|██▍       | 10/42 [00:00<00:01, 22.86it/s]Fetching 42 files:  31%|███       | 13/42 [00:00<00:01, 22.54it/s]Fetching 42 files:  43%|████▎     | 18/42 [00:00<00:00, 26.25it/s]Fetching 42 files:  50%|█████     | 21/42 [00:01<00:00, 25.12it/s]Fetching 42 files:  62%|██████▏   | 26/42 [00:01<00:00, 26.89it/s]Fetching 42 files:  69%|██████▉   | 29/42 [00:01<00:00, 26.34it/s]Fetching 42 files:  81%|████████  | 34/42 [00:01<00:00, 26.69it/s]Fetching 42 files:  88%|████████▊ | 37/42 [00:01<00:00, 26.54it/s]Fetching 42 files: 100%|██████████| 42/42 [00:01<00:00, 25.70it/s]Fetching 42 files: 100%|██████████| 42/42 [00:01<00:00, 23.34it/s]
+Loading weights:   0%|          | 0/411 [00:00<?, ?it/s]Loading weights:   0%|          | 1/411 [00:04<30:20,  4.44s/it]Loading weights:   1%|          | 5/411 [00:05<06:10,  1.10it/s]Loading weights:   5%|▌         | 22/411 [00:05<01:00,  6.44it/s]Loading weights:   7%|▋         | 28/411 [00:06<00:52,  7.28it/s]Loading weights:   8%|▊         | 33/411 [00:06<00:41,  9.22it/s]Loading weights:   9%|▉         | 38/411 [00:06<00:34, 10.69it/s]Loading weights:  10%|█         | 42/411 [00:07<00:38,  9.69it/s]Loading weights:  12%|█▏        | 50/411 [00:07<00:24, 14.55it/s]Loading weights:  13%|█▎        | 55/411 [00:07<00:24, 14.70it/s]Loading weights:  14%|█▍        | 58/411 [00:08<00:29, 11.79it/s]Loading weights:  16%|█▋        | 67/411 [00:08<00:18, 18.79it/s]Loading weights:  17%|█▋        | 71/411 [00:08<00:19, 17.49it/s]Loading weights:  18%|█▊        | 75/411 [00:09<00:24, 13.78it/s]Loading weights:  20%|██        | 84/411 [00:09<00:16, 20.31it/s]Loading weights:  22%|██▏       | 89/411 [00:09<00:16, 19.84it/s]Loading weights:  22%|██▏       | 92/411 [00:10<00:21, 14.56it/s]Loading weights:  25%|██▍       | 101/411 [00:10<00:13, 22.32it/s]Loading weights:  26%|██▌       | 106/411 [00:10<00:13, 22.05it/s]Loading weights:  27%|██▋       | 110/411 [00:10<00:18, 16.30it/s]Loading weights:  29%|██▊       | 118/411 [00:10<00:13, 22.47it/s]Loading weights:  30%|██▉       | 123/411 [00:11<00:13, 22.00it/s]Loading weights:  31%|███       | 126/411 [00:11<00:18, 15.17it/s]Loading weights:  32%|███▏      | 133/411 [00:11<00:12, 21.54it/s]Loading weights:  34%|███▎      | 138/411 [00:12<00:13, 20.05it/s]Loading weights:  35%|███▍      | 143/411 [00:12<00:18, 14.77it/s]Loading weights:  37%|███▋      | 152/411 [00:12<00:11, 21.76it/s]Loading weights:  38%|███▊      | 156/411 [00:13<00:13, 19.25it/s]Loading weights:  39%|███▊      | 159/411 [00:13<00:17, 14.14it/s]Loading weights:  41%|████      | 169/411 [00:13<00:10, 22.91it/s]Loading weights:  43%|████▎     | 175/411 [00:13<00:10, 23.19it/s]Loading weights:  44%|████▎     | 179/411 [00:14<00:14, 16.25it/s]Loading weights:  45%|████▌     | 186/411 [00:14<00:10, 21.38it/s]Loading weights:  46%|████▋     | 191/411 [00:14<00:10, 20.96it/s]Loading weights:  47%|████▋     | 194/411 [00:15<00:14, 15.11it/s]Loading weights:  49%|████▉     | 203/411 [00:15<00:09, 22.39it/s]Loading weights:  51%|█████     | 208/411 [00:15<00:08, 23.14it/s]Loading weights:  52%|█████▏    | 212/411 [00:16<00:13, 15.14it/s]Loading weights:  54%|█████▎    | 220/411 [00:16<00:08, 21.69it/s]Loading weights:  55%|█████▍    | 225/411 [00:16<00:08, 22.09it/s]Loading weights:  56%|█████▌    | 229/411 [00:17<00:12, 15.14it/s]Loading weights:  58%|█████▊    | 237/411 [00:17<00:08, 21.69it/s]Loading weights:  59%|█████▉    | 242/411 [00:17<00:07, 21.68it/s]Loading weights:  60%|█████▉    | 246/411 [00:17<00:10, 15.95it/s]Loading weights:  62%|██████▏   | 254/411 [00:18<00:06, 22.88it/s]Loading weights:  63%|██████▎   | 260/411 [00:18<00:06, 22.53it/s]Loading weights:  64%|██████▍   | 264/411 [00:18<00:08, 17.84it/s]Loading weights:  66%|██████▌   | 271/411 [00:18<00:06, 23.22it/s]Loading weights:  67%|██████▋   | 277/411 [00:19<00:05, 23.79it/s]Loading weights:  68%|██████▊   | 281/411 [00:19<00:07, 16.70it/s]Loading weights:  70%|███████   | 288/411 [00:19<00:05, 21.67it/s]Loading weights:  71%|███████▏  | 293/411 [00:19<00:05, 21.56it/s]Loading weights:  72%|███████▏  | 296/411 [00:20<00:08, 14.13it/s]Loading weights:  74%|███████▍  | 305/411 [00:20<00:04, 22.53it/s]Loading weights:  75%|███████▌  | 310/411 [00:21<00:05, 17.97it/s]Loading weights:  76%|███████▋  | 314/411 [00:21<00:06, 14.91it/s]Loading weights:  78%|███████▊  | 322/411 [00:21<00:04, 21.29it/s]Loading weights:  79%|███████▉  | 326/411 [00:21<00:04, 19.19it/s]Loading weights:  80%|████████  | 329/411 [00:22<00:06, 12.77it/s]Loading weights:  82%|████████▏ | 339/411 [00:22<00:03, 21.12it/s]Loading weights:  84%|████████▍ | 345/411 [00:23<00:03, 17.15it/s]Loading weights:  85%|████████▍ | 349/411 [00:23<00:05, 11.23it/s]Loading weights:  87%|████████▋ | 356/411 [00:23<00:03, 15.58it/s]Loading weights:  88%|████████▊ | 362/411 [00:24<00:03, 16.24it/s]Loading weights:  89%|████████▉ | 365/411 [00:24<00:03, 12.06it/s]Loading weights:  90%|████████▉ | 369/411 [00:25<00:02, 14.34it/s]Loading weights:  92%|█████████▏| 378/411 [00:25<00:01, 19.11it/s]Loading weights:  93%|█████████▎| 381/411 [00:25<00:02, 12.35it/s]Loading weights:  95%|█████████▍| 390/411 [00:26<00:01, 18.91it/s]Loading weights:  96%|█████████▌| 395/411 [00:26<00:00, 18.34it/s]Loading weights:  97%|█████████▋| 398/411 [00:26<00:01, 12.37it/s]Loading weights:  99%|█████████▉| 407/411 [00:27<00:00, 19.17it/s]Loading weights: 100%|██████████| 411/411 [00:27<00:00, 15.16it/s]
+{
+ "seconds": 34.6,
+ "attn_implementation": "eager",
+ "dtype_arg": "bfloat16",
+ "device_map": {
+  "": 0
+ },
+ "get_memory_footprint_bytes": 3622190464,
+ "get_memory_footprint_gib": 3.37,
+ "cuda_memory_allocated_gib": 12.83,
+ "cuda_max_memory_allocated_gib": 12.83,
+ "hf_quantizer_class": "Mxfp4HfQuantizer",
+ "quantizer_dequantize_flag": false,
+ "config_quantization_config": {
+  "quant_method": "mxfp4",
+  "modules_to_not_convert": [
+   "model.layers.*.self_attn",
+   "model.layers.*.mlp.router",
+   "model.embed_tokens",
+   "lm_head"
+  ]
+ },
+ "n_parameters_registered": 1804459584,
+ "parameter_numel_by_dtype": {
+  "torch.bfloat16": 1797824064,
+  "torch.float32": 6635520,
+  "buffer:torch.float32": 64
+ },
+ "n_decoder_layers": 24
+}
+layer_0 Mxfp4GptOssExperts
+    gate_up_proj_bias {'type': 'Parameter', 'dtype': 'torch.float32', 'shape': [32, 5760], 'device': 'cuda:0'}
+    down_proj_bias {'type': 'Parameter', 'dtype': 'torch.float32', 'shape': [32, 2880], 'device': 'cuda:0'}
+    gate_up_proj_precision_config.weight_scale {'type': 'Tensor', 'dtype': 'torch.uint8', 'shape': [32, 90, 5760], 'device': 'cuda:0'}
+    down_proj_precision_config.weight_scale {'type': 'Tensor', 'dtype': 'torch.uint8', 'shape': [32, 90, 2880], 'device': 'cuda:0'}
+    down_proj {'type': 'Tensor', 'dtype': 'FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)', 'shape': [32, 2880, 2880], 'device': 'cuda:0'}
+    gate_up_proj {'type': 'Tensor', 'dtype': 'FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)', 'shape': [32, 2880, 5760], 'device': 'cuda:0'}
+layer_12 Mxfp4GptOssExperts
+    gate_up_proj_bias {'type': 'Parameter', 'dtype': 'torch.float32', 'shape': [32, 5760], 'device': 'cuda:0'}
+    down_proj_bias {'type': 'Parameter', 'dtype': 'torch.float32', 'shape': [32, 2880], 'device': 'cuda:0'}
+    gate_up_proj_precision_config.weight_scale {'type': 'Tensor', 'dtype': 'torch.uint8', 'shape': [32, 90, 5760], 'device': 'cuda:0'}
+    down_proj_precision_config.weight_scale {'type': 'Tensor', 'dtype': 'torch.uint8', 'shape': [32, 90, 2880], 'device': 'cuda:0'}
+    down_proj {'type': 'Tensor', 'dtype': 'FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)', 'shape': [32, 2880, 2880], 'device': 'cuda:0'}
+    gate_up_proj {'type': 'Tensor', 'dtype': 'FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)', 'shape': [32, 2880, 5760], 'device': 'cuda:0'}
+layer_23 Mxfp4GptOssExperts
+    gate_up_proj_bias {'type': 'Parameter', 'dtype': 'torch.float32', 'shape': [32, 5760], 'device': 'cuda:0'}
+    down_proj_bias {'type': 'Parameter', 'dtype': 'torch.float32', 'shape': [32, 2880], 'device': 'cuda:0'}
+    gate_up_proj_precision_config.weight_scale {'type': 'Tensor', 'dtype': 'torch.uint8', 'shape': [32, 90, 5760], 'device': 'cuda:0'}
+    down_proj_precision_config.weight_scale {'type': 'Tensor', 'dtype': 'torch.uint8', 'shape': [32, 90, 2880], 'device': 'cuda:0'}
+    down_proj {'type': 'Tensor', 'dtype': 'FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)', 'shape': [32, 2880, 2880], 'device': 'cuda:0'}
+    gate_up_proj {'type': 'Tensor', 'dtype': 'FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)', 'shape': [32, 2880, 5760], 'device': 'cuda:0'}
+{
+ "prompt_n_tokens": 79,
+ "eager": {
+  "top5_next_token": [
+   {
+    "tok": "<|channel|>",
+    "p": 1.0
+   },
+   {
+    "tok": "<|constrain|>",
+    "p": 0.0
+   },
+   {
+    "tok": " ",
+    "p": 0.0
+   },
+   {
+    "tok": "<|message|>",
+    "p": 0.0
+   },
+   {
+    "tok": " d",
+    "p": 0.0
+   }
+  ],
+  "peak_gib": 12.9,
+  "generate_64_seconds": 5.4,
+  "generated_text": "<|channel|>analysis<|message|>The user asks: \"What is the capital of France? Answer in one word.\" The answer is \"Paris\". So respond with \"Paris\".<|end|><|start|>assistant<|channel|>final<|message|>Paris<|return|>"
+ }
+}
+!! flex attention failed: InductorError('LoweringException: ValueError: Invalid FlexAttention decode kernel options: Q and KV block sizes must be divisible by the selected tile sizes. Got SPARSE_Q_BLOCK_SIZE=128, SPARSE_KV_BLOCK_SIZE=128, and BLOCK_M=1024, BLOCK_N=64. Pass compatible values with kernel_options. Available decode tuning options are BLOCK_M, BLOCK_N, num_warps, and num_stages; use the fwd_ prefix to set decode-only options. For example: kernel_options={\'fwd_BLOCK_M\': 32, \'fwd_BLOCK_N\': 64, \'fwd_num_stages\': 1, \'fwd_num_warps\': 4}. If you did not pin these options, compiling with mode=\'max-autotune-no-cudagraphs\' can also fix this by trying more FlexAttention configs.\n  target: flex_attention\n  args[0]: TensorBox(StorageBox(\n    InputBuffer(name=\'arg0_1\', layout=FixedLayout(\'cuda:0\', torch.bfloat16, size=[1, 64, 79, 64], stride=[323584, 5056, 64, 1]))\n  ))\n  args[1]: TensorBox(StorageBox(\n    InputBuffer(name=\'arg1_1\', layout=FixedLayout(\'cuda:0\', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[2]: TensorBox(StorageBox(\n    InputBuffer(name=\'arg2_1\', layout=FixedLayout(\'cuda:0\', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[3]: Subgraph(name=\'sdpa_score0\', graph_module=<lambda>(), inductor_config_patches=None, graph=None)\n  args[4]: (79, 79, TensorBox(StorageBox(\n    InputBuffer(name=\'arg4_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg3_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg5_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg6_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg7_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg8_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg9_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg10_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), None, None, None, None, 128, 128, Subgraph(name=\'sdpa_mask0\', graph_module=<lambda>(), inductor_config_patches=None, graph=None))\n  args[5]: 0.125\n  args[6]: {\'BACKEND\': \'AUTO\', \'PRESCALE_QK\': False, \'ROWS_GUARANTEED_SAFE\': False, \'BLOCKS_ARE_CONTIGUOUS\': False, \'WRITE_DQ\': True, \'OUTPUT_LOGSUMEXP\': True, \'OUTPUT_MAX\': False}\n  args[7]: ()\n  args[8]: ()ValueError: Invalid FlexAttention decode kernel options: Q and KV block sizes must be divisible by the selected tile sizes. Got SPARSE_Q_BLOCK_SIZE=128, SPARSE_KV_BLOCK_SIZE=128, and BLOCK_M=1024, BLOCK_N=64. Pass compatible values with kernel_options. Available decode tuning options are BLOCK_M, BLOCK_N, num_warps, and num_stages; use the fwd_ prefix to set decode-only options. For example: kernel_options={\'fwd_BLOCK_M\': 32, \'fwd_BLOCK_N\': 64, \'fwd_num_stages\': 1, \'fwd_num_warps\': 4}. If you did not pin these options, compiling with mode=\'max-autotune-no-cudagraphs\' can also fix this by trying more FlexAttention configs.\n  target: flex_attention\n  args[0]: TensorBox(StorageBox(\n    InputBuffer(name=\'arg0_1\', layout=FixedLayout(\'cuda:0\', torch.bfloat16, size=[1, 64, 79, 64], stride=[323584, 5056, 64, 1]))\n  ))\n  args[1]: TensorBox(StorageBox(\n    InputBuffer(name=\'arg1_1\', layout=FixedLayout(\'cuda:0\', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[2]: TensorBox(StorageBox(\n    InputBuffer(name=\'arg2_1\', layout=FixedLayout(\'cuda:0\', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[3]: Subgraph(name=\'sdpa_score0\', graph_module=<lambda>(), inductor_config_patches=None, graph=None)\n  args[4]: (79, 79, TensorBox(StorageBox(\n    InputBuffer(name=\'arg4_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg3_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg5_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg6_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg7_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg8_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg9_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name=\'arg10_1\', layout=FixedLayout(\'cuda:0\', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), None, None, None, None, 128, 128, Subgraph(name=\'sdpa_mask0\', graph_module=<lambda>(), inductor_config_patches=None, graph=None))\n  args[5]: 0.125\n  args[6]: {\'BACKEND\': \'AUTO\', \'PRESCALE_QK\': False, \'ROWS_GUARANTEED_SAFE\': False, \'BLOCKS_ARE_CONTIGUOUS\': False, \'WRITE_DQ\': True, \'OUTPUT_LOGSUMEXP\': True, \'OUTPUT_MAX\': False}\n  args[7]: ()\n  args[8]: ()\nFound from : \n   File "/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py", line 2577, in flex_attention\n    out, lse, max_scores = flex_attention_hop(\n                           ^^^^^^^^^^^^^^^^^^^\n\n\nSet TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you\'re reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"\n')
+
+=== checks ===
+{
+ "capability_is_12_0": true,
+ "cuda_ge_12_8": true,
+ "hf_home_on_persistent_volume": true,
+ "all_requirements_pins_match": true,
+ "kernels_installed": true,
+ "lean_fingerprints_match_manifest": true,
+ "monitor_data_recompute_matches_manifest": false,
+ "lean_and_monitor_data_action_counts_agree": true,
+ "export_data_files_present_and_match": false,
+ "model_footprint_under_20gib": true,
+ "quantizer_did_not_dequantize": true,
+ "expert_weights_not_bf16": true,
+ "eager_generation_produced_final_channel": true,
+ "flex_attention_works": false
+}
+errors: []
+raw -> results/raw/local-monitor-activations/g1_env_20260910T070739Z.json

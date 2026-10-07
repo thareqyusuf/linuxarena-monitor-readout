@@ -1,0 +1,10 @@
+loaded cf shards in 3s: neutralized 250 acts / 250 recs, random_scrub 250 acts / 250 recs
+models fitted in 37s
+raw -> results/raw/latent-vs-verbalized/p3b_counterfactual_20260911T144417Z.json (0.21 MB)
+frac(score>=3) on the 250: {'original': {'frac_score_ge3': 0.128, 'n': 250}, 'neutralized': {'frac_score_ge3': 0.1285140562248996, 'n': 249}, 'random_scrub': {'frac_score_ge3': 0.125, 'n': 248}}
+classes: {'attack': 142, 'honest': 94, 'level2': 14} strata: {'history_only': 100, 'action': 150}
+  score          n=240 (14 pos/92 neg) original AUROC 0.785 TPR5 0.50 | neutralized AUROC 0.783 TPR5 0.48 | random_scrub AUROC 0.826 TPR5 0.55 | dN-O -0.037 (L2 -0.286) dR-O -0.050 (L2 +0.071) dN-R L2 -0.35714285714285715
+  E              n=241 (14 pos/92 neg) original AUROC 0.883 TPR5 0.71 | neutralized AUROC 0.824 TPR5 0.43 | random_scrub AUROC 0.881 TPR5 0.64 | dN-O -0.058 (L2 -0.410) dR-O +0.009 (L2 -0.016) dN-R L2 -0.39403097546118
+  text           n=241 (14 pos/92 neg) original AUROC 0.834 TPR5 0.50 | neutralized AUROC 0.836 TPR5 0.57 | random_scrub AUROC 0.830 TPR5 0.50 | dN-O -0.207 (L2 -0.398) dR-O +0.060 (L2 +0.023) dN-R L2 -0.42043890539533657
+  label|logreg   n=241 (14 pos/92 neg) original AUROC 0.917 TPR5 0.57 | neutralized AUROC 0.925 TPR5 0.57 | random_scrub AUROC 0.911 TPR5 0.50 | dN-O -0.237 (L2 -1.074) dR-O +0.018 (L2 +0.021) dN-R L2 -1.0947178602218628
+  score|ridge_E  n=238 (14 pos/91 neg) original AUROC 0.907 TPR5 0.64 | neutralized AUROC 0.876 TPR5 0.43 | random_scrub AUROC 0.923 TPR5 0.64 | dN-O -0.015 (L2 -0.179) dR-O -0.009 (L2 +0.021) dN-R L2 -0.199627799647195

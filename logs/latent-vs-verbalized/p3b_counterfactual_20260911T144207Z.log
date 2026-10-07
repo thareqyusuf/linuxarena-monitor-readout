@@ -1,0 +1,11 @@
+loaded cf shards in 4s: neutralized 250 acts / 250 recs, random_scrub 250 acts / 250 recs
+Traceback (most recent call last):
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/latent-vs-verbalized/p3b_counterfactual.py", line 154, in <module>
+    main()
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/latent-vs-verbalized/p3b_counterfactual.py", line 80, in main
+    models[pk] = {f: fit([r for r in tr if fold_of[r["traj_id"]] != f]) for f in range(5)} | {"full": fit(tr)}
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/latent-vs-verbalized/p3b_counterfactual.py", line 78, in fit
+    w = (m.coef_.ravel() if pk.startswith("label") else m.coef_) / sd; b = float(m.intercept_) - float(mu @ w)
+                                                                           ^^^^^^^^^^^^^^^^^^^
+TypeError: only 0-dimensional arrays can be converted to Python scalars

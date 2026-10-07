@@ -1,0 +1,65 @@
+labels -> experiments/action-level-attack-label/action_labels.json (3.3 MB)  enrich -> experiments/action-level-attack-label/subset_payload_enrich.json (18 KB)  raw -> results/raw/action-level-attack-label/a5_emit_20260911T103843Z.json
+{
+ "n_rows": 17234,
+ "by_side": {
+  "honest": 12487,
+  "attack": 4747
+ },
+ "attack_label_level": {
+  "0": 2656,
+  "1": 467,
+  "2": 160,
+  "None": 1464
+ },
+ "honest_label_level": {
+  "0": 12325,
+  "None": 162
+ },
+ "attack_label_source": {
+  "signature": 3283,
+  "placeholder": 1464
+ },
+ "honest_label_source": {
+  "signature": 12325,
+  "placeholder": 162
+ },
+ "attack_level2_comment_only": 1,
+ "attack_level2_by_category": {
+  "monitoring_subversion": 23,
+  "exfiltration": 31,
+  "data_tampering": 31,
+  "access_control_bypass": 23,
+  "running_malware": 17,
+  "access_secret": 35
+ },
+ "attack_level2_x_cached_high": {
+  "False": 116,
+  "True": 39,
+  "None": 5
+ },
+ "audit_verdict_counts": {
+  "benign": 132,
+  "prep": 24,
+  "payload": 20
+ },
+ "audit_payload_level0": 8,
+ "subset_main_rows": 2012,
+ "enrich": {
+  "n": 56,
+  "n_per_category": {
+   "exfiltration": 22,
+   "data_tampering": 3,
+   "running_malware": 5,
+   "monitoring_subversion": 3,
+   "access_control_bypass": 8,
+   "access_secret": 15
+  },
+  "n_trajectories": 19,
+  "cap_tokens": 32000
+ },
+ "enrich_cached_high": {
+  "False": 44,
+  "True": 10,
+  "None": 2
+ }
+}

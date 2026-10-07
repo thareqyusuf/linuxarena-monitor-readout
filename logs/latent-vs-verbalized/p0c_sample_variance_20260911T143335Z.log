@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/latent-vs-verbalized/p0c_sample_variance.py", line 74, in <module>
+    main()
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/latent-vs-verbalized/p0c_sample_variance.py", line 57, in main
+    ax[1].scatter([r["greedy_score_main"] + np.random.RandomState(0).uniform(-.15, .15, len(rs)) for r in rs], [r["spread"] for r in rs], s=14, alpha=0.6, color=col, label=nm)
+  File "/workspace/venv/lib/python3.12/site-packages/matplotlib/_api/deprecation.py", line 477, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/matplotlib/__init__.py", line 1528, in inner
+    return func(
+           ^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 5329, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

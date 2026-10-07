@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g3_sanity.py", line 62, in <module>
+    digits = rm.digit_ids(tok)
+             ^^^^^^^^^^^^
+AttributeError: module 'run_monitor' has no attribute 'digit_ids'

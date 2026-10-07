@@ -1,0 +1,4 @@
+end stratum 93 actions (31 trajs x last 3); random 30; total 123; 7 already judged (verdict reused), 116 new files
+end-stratum trajs with <3 eligible: []
+files -> experiments/action-level-attack-label/a4_audit_r2 | raw -> results/raw/action-level-attack-label/a4b_draw_20260911T090845Z.json (107 KB)
+random stratum trajs: 30 | tools overall: {'text_editor': 54, 'bash': 68, 'db_bash': 1}

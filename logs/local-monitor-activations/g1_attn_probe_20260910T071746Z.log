@@ -1,0 +1,126 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 42 files:   0%|          | 0/42 [00:00<?, ?it/s]Fetching 42 files: 100%|██████████| 42/42 [00:00<00:00, 1276.44it/s]
+Loading weights:   0%|          | 0/411 [00:00<?, ?it/s]Loading weights:   0%|          | 1/411 [00:01<11:58,  1.75s/it]Loading weights:   0%|          | 2/411 [00:03<12:12,  1.79s/it]Loading weights:   1%|          | 5/411 [00:03<03:53,  1.74it/s]Loading weights:   1%|▏         | 6/411 [00:04<03:27,  1.95it/s]Loading weights:   4%|▍         | 16/411 [00:04<00:47,  8.29it/s]Loading weights:   5%|▍         | 20/411 [00:04<00:38, 10.09it/s]Loading weights:   6%|▌         | 23/411 [00:04<00:42,  9.03it/s]Loading weights:   8%|▊         | 33/411 [00:05<00:21, 17.56it/s]Loading weights:   9%|▉         | 39/411 [00:05<00:19, 19.07it/s]Loading weights:  10%|█         | 43/411 [00:06<00:31, 11.83it/s]Loading weights:  12%|█▏        | 50/411 [00:06<00:22, 16.01it/s]Loading weights:  13%|█▎        | 55/411 [00:06<00:22, 16.17it/s]Loading weights:  14%|█▍        | 58/411 [00:07<00:33, 10.39it/s]Loading weights:  16%|█▋        | 67/411 [00:07<00:20, 16.84it/s]Loading weights:  18%|█▊        | 73/411 [00:07<00:18, 18.02it/s]Loading weights:  19%|█▊        | 77/411 [00:08<00:24, 13.49it/s]Loading weights:  20%|██        | 84/411 [00:08<00:17, 18.38it/s]Loading weights:  21%|██▏       | 88/411 [00:08<00:19, 16.67it/s]Loading weights:  22%|██▏       | 91/411 [00:09<00:25, 12.33it/s]Loading weights:  24%|██▎       | 97/411 [00:09<00:18, 16.86it/s]Loading weights:  26%|██▌       | 106/411 [00:09<00:15, 20.04it/s]Loading weights:  27%|██▋       | 109/411 [00:10<00:19, 15.10it/s]Loading weights:  29%|██▊       | 118/411 [00:10<00:13, 22.49it/s]Loading weights:  30%|███       | 124/411 [00:10<00:12, 22.32it/s]Loading weights:  31%|███       | 128/411 [00:11<00:17, 15.92it/s]Loading weights:  33%|███▎      | 135/411 [00:11<00:13, 20.78it/s]Loading weights:  34%|███▍      | 140/411 [00:11<00:13, 20.54it/s]Loading weights:  35%|███▍      | 143/411 [00:11<00:19, 13.66it/s]Loading weights:  37%|███▋      | 152/411 [00:12<00:12, 21.41it/s]Loading weights:  38%|███▊      | 158/411 [00:12<00:17, 14.43it/s]Loading weights:  41%|████      | 167/411 [00:12<00:11, 20.93it/s]Loading weights:  42%|████▏     | 174/411 [00:13<00:11, 20.93it/s]Loading weights:  43%|████▎     | 178/411 [00:13<00:14, 15.79it/s]Loading weights:  45%|████▌     | 186/411 [00:13<00:10, 21.25it/s]Loading weights:  46%|████▋     | 191/411 [00:14<00:12, 17.94it/s]Loading weights:  47%|████▋     | 194/411 [00:14<00:16, 13.21it/s]Loading weights:  49%|████▉     | 202/411 [00:14<00:10, 19.05it/s]Loading weights:  51%|█████     | 209/411 [00:15<00:09, 20.31it/s]Loading weights:  52%|█████▏    | 212/411 [00:15<00:13, 14.72it/s]Loading weights:  53%|█████▎    | 218/411 [00:15<00:10, 18.82it/s]Loading weights:  55%|█████▍    | 225/411 [00:16<00:08, 21.63it/s]Loading weights:  55%|█████▌    | 228/411 [00:16<00:13, 13.67it/s]Loading weights:  57%|█████▋    | 235/411 [00:16<00:09, 18.46it/s]Loading weights:  59%|█████▉    | 242/411 [00:17<00:08, 20.46it/s]Loading weights:  60%|█████▉    | 245/411 [00:17<00:10, 15.15it/s]Loading weights:  62%|██████▏   | 254/411 [00:17<00:07, 22.41it/s]Loading weights:  63%|██████▎   | 258/411 [00:18<00:08, 19.09it/s]Loading weights:  64%|██████▎   | 262/411 [00:18<00:10, 14.35it/s]Loading weights:  66%|██████▌   | 271/411 [00:18<00:06, 21.79it/s]Loading weights:  67%|██████▋   | 276/411 [00:19<00:06, 20.32it/s]Loading weights:  68%|██████▊   | 280/411 [00:19<00:09, 13.57it/s]Loading weights:  70%|███████   | 288/411 [00:19<00:06, 19.98it/s]Loading weights:  71%|███████▏  | 293/411 [00:20<00:08, 13.46it/s]Loading weights:  73%|███████▎  | 302/411 [00:20<00:05, 19.83it/s]Loading weights:  75%|███████▌  | 310/411 [00:20<00:04, 21.84it/s]Loading weights:  76%|███████▋  | 314/411 [00:21<00:06, 15.76it/s]Loading weights:  78%|███████▊  | 322/411 [00:21<00:04, 18.19it/s]Loading weights:  80%|███████▉  | 327/411 [00:21<00:04, 18.87it/s]Loading weights:  80%|████████  | 330/411 [00:22<00:05, 14.12it/s]Loading weights:  82%|████████▏ | 339/411 [00:22<00:03, 21.82it/s]Loading weights:  84%|████████▍ | 345/411 [00:22<00:02, 22.48it/s]Loading weights:  85%|████████▍ | 349/411 [00:23<00:03, 15.96it/s]Loading weights:  87%|████████▋ | 356/411 [00:23<00:02, 21.03it/s]Loading weights:  88%|████████▊ | 361/411 [00:23<00:02, 20.28it/s]Loading weights:  89%|████████▊ | 364/411 [00:24<00:03, 15.22it/s]Loading weights:  91%|█████████ | 373/411 [00:24<00:01, 23.04it/s]Loading weights:  92%|█████████▏| 379/411 [00:24<00:01, 23.18it/s]Loading weights:  93%|█████████▎| 383/411 [00:25<00:01, 14.92it/s]Loading weights:  95%|█████████▍| 390/411 [00:25<00:01, 19.97it/s]Loading weights:  96%|█████████▌| 395/411 [00:25<00:00, 20.48it/s]Loading weights:  97%|█████████▋| 398/411 [00:25<00:00, 14.30it/s]Loading weights:  99%|█████████▉| 407/411 [00:26<00:00, 22.39it/s]Loading weights: 100%|██████████| 411/411 [00:26<00:00, 15.74it/s]
+{
+ "peak_gib_79": 12.95,
+ "peak_gib_2048": 15.16,
+ "gen79": "<|channel|>analysis<|message|>The user asks: \"What is the capital of France? Answer in one word.\" The answer is \"Paris\". So respond with \"Paris\".<|end|><|start|>assistant<|channel|>final<|message|>Paris<|return|>"
+}
+flex default {
+ "prefill256_seconds": 46.7,
+ "prefill256_max_abs_logit_diff_vs_eager_last": null,
+ "prefill256_ok": true
+}
+   compare_error 
+   gen_error 
+flex kernel_options_BLOCK64 {
+ "prefill256_seconds": 3.0,
+ "prefill256_max_abs_logit_diff_vs_eager_last": null,
+ "prefill256_ok": true,
+ "compare": {
+  "peak_gib_79": 13.01,
+  "max_abs_logit_diff_79_all_positions": 6.5,
+  "max_abs_logit_diff_79_last_position": 3.082,
+  "argmax_agreement_79": 0.8987,
+  "peak_gib_2048": 15.16,
+  "max_abs_logit_diff_2048_all_positions": 1.4062,
+  "max_abs_logit_diff_2048_last_position": 0.0625,
+  "argmax_agreement_2048": 0.9907
+ }
+}
+   gen_error ValueError: The following `model_kwargs` are not used by the model: ['kernel_options'] (note: typos in the generate arguments will also show up in this list)
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10] torch._dynamo hit config.recompile_limit (8)
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10]    function: 'flex_attention' (/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py:2365)
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10]    last reason: 1/9: ___check_obj_id(block_mask.mask_mod.__closure__[1].cell_contents.__code__, 126677136331072), type=<class 'code'>  # return mask_function(batch_idx, head_idx, q_idx + q_offset, kv_idx + kv_offset)  # transformers/masking_utils.py:201 in inner_mask (HINT: guard on "mask_function".__code__)
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10] User stack trace:
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10]   File "/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py", line 2577, in flex_attention
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10]     out, lse, max_scores = flex_attention_hop(
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10]   File "/workspace/venv/lib/python3.12/site-packages/transformers/masking_utils.py", line 201, in inner_mask
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10]     return mask_function(batch_idx, head_idx, q_idx + q_offset, kv_idx + kv_offset)
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10] To log all recompilation reasons, use TORCH_LOGS="recompiles".
+W0910 07:21:02.949000 16231 torch/_dynamo/convert_frame.py:2008] [1/10] To diagnose recompilation issues, see https://docs.pytorch.org/docs/main/user_guide/torch_compiler/compile/programming_model.recompilation.html
+/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py:2596: UserWarning: flex_attention called without torch.compile() - this will use an unfused implementation that materializes the full scores matrix instead of generating a fused kernel.
+
+SOLUTION: Use torch.compile(flex_attention)(...)
+
+If you want to debug your score_mod/mask_mod, you can set:
+torch.nn.attention.flex_attention._FLEX_ATTENTION_DISABLE_COMPILE_DEBUG = True
+
+This will allow you to use print statements or breakpoints. Note: This doesn't work with the backwards pass and may produce incorrect results.
+  _warn_once(
+flex kernel_options_fwd32_64 {
+ "prefill256_seconds": 2.2,
+ "prefill256_max_abs_logit_diff_vs_eager_last": null,
+ "prefill256_ok": true,
+ "compare": {
+  "peak_gib_79": 12.95,
+  "max_abs_logit_diff_79_all_positions": 7.6406,
+  "max_abs_logit_diff_79_last_position": 3.6562,
+  "argmax_agreement_79": 0.8734,
+  "peak_gib_2048": 15.16,
+  "max_abs_logit_diff_2048_all_positions": 1.4062,
+  "max_abs_logit_diff_2048_last_position": 0.0625,
+  "argmax_agreement_2048": 0.9912
+ }
+}
+   gen_error ValueError: The following `model_kwargs` are not used by the model: ['kernel_options'] (note: typos in the generate arguments will also show up in this list)
+chunked {
+ "attn_implementation": "chunked_eager",
+ "compare": {
+  "peak_gib_79": 12.95,
+  "max_abs_logit_diff_79_all_positions": 4.9375,
+  "max_abs_logit_diff_79_last_position": 0.9375,
+  "argmax_agreement_79": 0.9747,
+  "peak_gib_2048": 16.44,
+  "max_abs_logit_diff_2048_all_positions": 1.4824,
+  "max_abs_logit_diff_2048_last_position": 0.0547,
+  "argmax_agreement_2048": 0.9927
+ },
+ "gen79": "<|channel|>analysis<|message|>The user asks: \"What is the capital of France? Answer in one word.\" The answer is \"Paris\". So respond with \"Paris\".<|end|><|start|>assistant<|channel|>final<|message|>Paris<|return|>",
+ "gen79_same_as_eager": true
+}
+chunked prefill L=4096: {'seconds': 1.7, 'peak_gib': 16.68, 'logits_finite': True, 'kv_full_layer_tokens': 4096, 'kv_sliding_layer_tokens': 127}
+[W910 07:21:11.053712601 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 553648128 bytes (free: 387842048, total: 33668857856).
+[W910 07:21:11.146419631 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 671088640 bytes (free: 354287616, total: 33668857856).
+[W910 07:21:12.238442559 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 771751936 bytes (free: 56492032, total: 33668857856).
+[W910 07:21:12.329869707 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 857735168 bytes (free: 127795200, total: 33668857856).
+[W910 07:21:12.421863722 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 939524096 bytes (free: 589168640, total: 33668857856).
+[W910 07:21:12.507912339 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1006632960 bytes (free: 649986048, total: 33668857856).
+[W910 07:21:12.597320553 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1073741824 bytes (free: 366870528, total: 33668857856).
+chunked prefill L=16384: {'seconds': 8.5, 'peak_gib': 17.63, 'logits_finite': True, 'kv_full_layer_tokens': 16384, 'kv_sliding_layer_tokens': 127, 'generate16_after_prefill_seconds': 8.2, 'generate16_text': '<|vq_clip_12273|>this is a screenshot of a', 'generate16_peak_gib': 18.38}
+[W910 07:21:29.198403755 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 589299712 bytes (free: 383647744, total: 33668857856).
+[W910 07:21:29.429719404 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 689963008 bytes (free: 77463552, total: 33668857856).
+[W910 07:21:29.633059079 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 763363328 bytes (free: 457048064, total: 33668857856).
+[W910 07:21:29.770523250 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 805306368 bytes (free: 85852160, total: 33668857856).
+[W910 07:21:29.903658646 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 845152256 bytes (free: 71172096, total: 33668857856).
+[W910 07:21:29.038190268 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 880803840 bytes (free: 215875584, total: 33668857856).
+[W910 07:21:29.168218085 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 916455424 bytes (free: 433979392, total: 33668857856).
+[W910 07:21:30.286874491 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 945815552 bytes (free: 794689536, total: 33668857856).
+[W910 07:21:30.369715048 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 962592768 bytes (free: 410910720, total: 33668857856).
+[W910 07:21:30.456866212 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 979369984 bytes (free: 117309440, total: 33668857856).
+[W910 07:21:30.544668067 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 994050048 bytes (free: 817758208, total: 33668857856).
+[W910 07:21:30.631977367 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1010827264 bytes (free: 43909120, total: 33668857856).
+[W910 07:21:30.722421618 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1027604480 bytes (free: 786300928, total: 33668857856).
+[W910 07:21:30.799149868 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1042284544 bytes (free: 549322752, total: 33668857856).
+[W910 07:21:30.886049005 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1056964608 bytes (free: 836632576, total: 33668857856).
+[W910 07:21:30.963633243 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1071644672 bytes (free: 77463552, total: 33668857856).
+chunked prefill L=32768: {'seconds': 27.6, 'peak_gib': 18.9, 'logits_finite': True, 'kv_full_layer_tokens': 32768, 'kv_sliding_layer_tokens': 127}
+[W910 07:22:03.296602948 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 968884224 bytes (free: 46006272, total: 33668857856).
+[W910 07:22:03.667626478 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 994050048 bytes (free: 759037952, total: 33668857856).
+[W910 07:22:03.046137939 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1019215872 bytes (free: 457048064, total: 33668857856).
+[W910 07:22:04.434496763 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1044381696 bytes (free: 155058176, total: 33668857856).
+[W910 07:22:04.802080196 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1067450368 bytes (free: 920518656, total: 33668857856).
+[W910 07:23:41.679841024 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 960495616 bytes (free: 501088256, total: 33668857856).
+[W910 07:23:41.921866835 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 977272832 bytes (free: 178126848, total: 33668857856).
+[W910 07:23:41.168870379 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 994050048 bytes (free: 43909120, total: 33668857856).
+[W910 07:23:42.390868255 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1008730112 bytes (free: 918421504, total: 33668857856).
+[W910 07:23:42.614224619 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1023410176 bytes (free: 815661056, total: 33668857856).
+[W910 07:23:42.840601874 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1038090240 bytes (free: 712900608, total: 33668857856).
+[W910 07:23:42.072126956 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1052770304 bytes (free: 610140160, total: 33668857856).
+[W910 07:23:43.305293959 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1067450368 bytes (free: 507379712, total: 33668857856).
+chunked prefill L=65536: {'seconds': 108.4, 'peak_gib': 21.43, 'logits_finite': True, 'kv_full_layer_tokens': 65536, 'kv_sliding_layer_tokens': 127}
+chunked prefill L=98304: {'seconds': 270.9, 'peak_gib': 24.24, 'logits_finite': True, 'kv_full_layer_tokens': 98304, 'kv_sliding_layer_tokens': 127}
+[W910 07:33:13.957453624 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3774873600 bytes (free: 2289893376, total: 33668857856).
+[W910 07:33:14.484082673 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3774873600 bytes (free: 2340225024, total: 33668857856).
+chunked prefill L=131072: {'oom': True, 'error': 'CUDA out of memory. Tried to allocate 3.52 GiB. GPU 0 has a total capacity of 31.36 GiB of which 2.18 GiB is free. Including non-PyTorch memory, this process has 29.17 GiB memory in use. Of the allocated memory 22.02 GiB is allocated by PyTorch, and 6.24 GiB is reserved by PyTorch but unallocated. I'}
+raw -> results/raw/local-monitor-activations/g1_attn_probe_20260910T071901Z.json

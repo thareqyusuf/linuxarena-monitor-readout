@@ -1,0 +1,30 @@
+  return get_kernel_hub(
+Traceback (most recent call last):
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g3_sanity.py", line 68, in <module>
+    model = AutoModelForCausalLM.from_pretrained(mp.MODEL_ID, dtype=torch.bfloat16, device_map={"": 0}, attn_implementation="chunked_eager").eval()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4271, in from_pretrained
+    hf_quantizer.preprocess_model(
+  File "/workspace/venv/lib/python3.12/site-packages/transformers/quantizers/base.py", line 171, in preprocess_model
+    self._process_model_before_weight_loading(model, **kwargs)
+  File "/workspace/venv/lib/python3.12/site-packages/transformers/quantizers/quantizer_mxfp4.py", line 209, in _process_model_before_weight_loading
+    model = replace_with_mxfp4_linear(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/transformers/integrations/mxfp4.py", line 567, in replace_with_mxfp4_linear
+    triton_kernels_hub = get_kernel("kernels-community/gpt-oss-triton-kernels", version=1)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/transformers/integrations/hub_kernels.py", line 824, in get_kernel
+    return get_kernel_hub(
+           ^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/kernels/utils.py", line 513, in get_kernel
+    revision = select_revision_or_version(repo_id, revision=revision, version=version)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/kernels/_versions.py", line 104, in select_revision_or_version
+    return resolve_version_spec_as_ref(repo_id, version).target_commit
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv/lib/python3.12/site-packages/kernels/_versions.py", line 72, in resolve_version_spec_as_ref
+    raise ValueError(
+ValueError: Version 1 of 'kernels-community/gpt-oss-triton-kernels' is not available in the local cache and Hugging Face Hub is in offline mode. Download the kernel while online first, or pass an explicit `revision=<commit>`.

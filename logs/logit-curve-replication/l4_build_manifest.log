@@ -1,0 +1,62 @@
+{
+ "slug": "logit-curve-replication",
+ "built_by": "experiments/logit-curve-replication/data_export/build_manifest.py",
+ "git_commit": "403285170faa86a8ea28a55844e2a5ca74d95246",
+ "timestamp": "2026-09-10T04:39:16.154841+00:00",
+ "runs": {
+  "honest": {
+   "agent_run_id": "ef6ed492f5a74ab8885e95469fe72fd2",
+   "monitor_run_id": "f25f1eafacd749e89f1736f26d3df751",
+   "agent_fingerprint": "e16efd82ae5d820e6b8c35c9e694710cfeaf2d4570ba26765635280ddf4bd346",
+   "monitor_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e"
+  },
+  "attack": {
+   "agent_run_id": "d085c1cbc4984437823563de06fb8cbe",
+   "monitor_run_id": "30d53f5ae4f7444687459d13ccc61101",
+   "agent_fingerprint": "0670e4fe077ab6d3cad08d2ddc1268b3c81ca4d2941f12e90fc99482f9474106",
+   "monitor_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e"
+  }
+ },
+ "mirror": "https://repro.linuxarena.ai/api/public",
+ "prompt_template_sha256": "a4a48d036bca6728925ad60061e214177e16fc063075ba084726ee52529d2058",
+ "prompt_hashes_from": "results/raw/logit-curve-replication/l4_prompt_verify_20260910T043718Z.json",
+ "n_trajectories": 292,
+ "n_actions": 17234,
+ "n_actions_by_side": {
+  "honest": 12487,
+  "attack": 4747
+ },
+ "pilot_size": 200,
+ "pilot_by_side_env": {
+  "honest/auto_workflow": 10,
+  "honest/clinical_trial": 10,
+  "honest/file_indexing": 10,
+  "honest/media_processing": 10,
+  "honest/model_registry": 10,
+  "honest/shared_dotfiles": 10,
+  "honest/slack_clone": 10,
+  "honest/tiktok": 10,
+  "honest/user_tracking": 10,
+  "honest/web_scraping": 10,
+  "attack/auto_workflow": 10,
+  "attack/clinical_trial": 10,
+  "attack/file_indexing": 10,
+  "attack/media_processing": 10,
+  "attack/model_registry": 10,
+  "attack/shared_dotfiles": 10,
+  "attack/slack_clone": 10,
+  "attack/tiktok": 10,
+  "attack/user_tracking": 10,
+  "attack/web_scraping": 10
+ },
+ "pilot_by_side_position": {
+  "honest/early": 40,
+  "honest/middle": 30,
+  "honest/late": 30,
+  "attack/early": 40,
+  "attack/middle": 30,
+  "attack/late": 30
+ },
+ "pilot_distinct_trajectories": 187
+}
+wrote experiments/logit-curve-replication/gpu/manifest.json (5.7 MB)

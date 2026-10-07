@@ -1,0 +1,694 @@
+{
+ "slug": "local-monitor-activations",
+ "script": "experiments/local-monitor-activations/g1_env.py",
+ "timestamp": "20260910T070739Z",
+ "hostname": "5ff14507233e",
+ "python": "3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]",
+ "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.39",
+ "checks": {
+  "capability_is_12_0": true,
+  "cuda_ge_12_8": true,
+  "hf_home_on_persistent_volume": true,
+  "all_requirements_pins_match": true,
+  "kernels_installed": true,
+  "lean_fingerprints_match_manifest": true,
+  "monitor_data_recompute_matches_manifest": false,
+  "lean_and_monitor_data_action_counts_agree": true,
+  "export_data_files_present_and_match": false,
+  "model_footprint_under_20gib": true,
+  "quantizer_did_not_dequantize": true,
+  "expert_weights_not_bf16": true,
+  "eager_generation_produced_final_channel": true,
+  "flex_attention_works": false
+ },
+ "errors": {},
+ "git_commit": "ce1babc31886fb44042fb20aa0f9bad23c0e5d96",
+ "manifest": {
+  "path": "experiments/logit-curve-replication/gpu/manifest.json",
+  "sha256": "a085f7d2ac3c2c4bc2b16ed0fbff9e416d965aaefd9f7b5a41ec303a21491bc1",
+  "git_commit": "403285170faa86a8ea28a55844e2a5ca74d95246",
+  "n_actions": 17234,
+  "n_actions_by_side": {
+   "honest": 12487,
+   "attack": 4747
+  },
+  "pilot_size": 200
+ },
+ "hardware": {
+  "nvidia_smi": "NVIDIA GeForce RTX 5090, 580.159.03, 32607 MiB, 12.0",
+  "torch": "2.14.0+cu130",
+  "torch_cuda": "13.0",
+  "cudnn": 92400,
+  "device_name": "NVIDIA GeForce RTX 5090",
+  "capability": [
+   12,
+   0
+  ],
+  "total_memory_bytes": 33668857856,
+  "total_memory_gib": 31.36,
+  "n_gpus": 1,
+  "cpu_count": 64
+ },
+ "seconds": {
+  "hardware": 21.3,
+  "storage": 0.0,
+  "packages": 0.1,
+  "mirror": 11.5,
+  "model": 194.8
+ },
+ "storage": {
+  "HF_HOME": "/workspace/hf",
+  "hf_home_on_workspace": true,
+  "workspace_free_gib": 592587.9,
+  "workspace_total_gib": 2158751.2,
+  "checkpoints_dir": "checkpoints/local-monitor-activations",
+  "data_api_dir": "checkpoints/local-monitor-activations/data/api",
+  "data_export_dir": "checkpoints/local-monitor-activations/data/export"
+ },
+ "packages": {
+  "installed": {
+   "torch": "2.14.0+cu130",
+   "transformers": "5.17.0",
+   "tokenizers": "0.23.2",
+   "accelerate": "1.15.0",
+   "safetensors": "0.8.0",
+   "numpy": "2.5.3",
+   "triton": "3.8.0",
+   "kernels": "0.16.1",
+   "huggingface_hub": "1.30.0",
+   "nnsight": "0.7.0",
+   "flash_attn": null
+  },
+  "requirements_txt_pins": {
+   "torch": "2.14.0",
+   "transformers": "5.17.0",
+   "tokenizers": "0.23.2",
+   "accelerate": "1.15.0",
+   "safetensors": "0.8.0",
+   "numpy": "2.5.3"
+  },
+  "pin_match": {
+   "torch": true,
+   "transformers": true,
+   "tokenizers": true,
+   "accelerate": true,
+   "safetensors": true,
+   "numpy": true
+  },
+  "requirements_txt": "experiments/logit-curve-replication/gpu/requirements.txt"
+ },
+ "mirror": {
+  "mirror": "https://repro.linuxarena.ai/api/public",
+  "payloads": {
+   "lean_honest": {
+    "side": "honest",
+    "endpoint": "lean",
+    "run_id": "f25f1eafacd749e89f1736f26d3df751",
+    "path": "checkpoints/local-monitor-activations/data/api/lean_f25f1eafacd749e89f1736f26d3df751.json",
+    "fetched_now": true,
+    "bytes": 1915687,
+    "sha256": "c9c4b3fb2661b800db6d5bccaa89ce4f5e1fdc3bddbe67b6bf68924f64bb9822",
+    "top_level_keys": [
+     "fingerprint",
+     "trajectories"
+    ],
+    "n_trajectories": 200,
+    "n_actions": 12675,
+    "n_actions_with_sus_score": 12675,
+    "trajectory_keys_example": [
+     "actions",
+     "environment",
+     "main_task",
+     "main_task_success",
+     "run_id",
+     "side_task",
+     "side_task_success",
+     "trajectory_id"
+    ],
+    "action_keys_example": [
+     "function",
+     "index",
+     "monitor_response"
+    ],
+    "server_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e",
+    "recomputed_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e",
+    "manifest_monitor_fingerprint": "190c8878835790c6aebbdae5ffec1080a8d7393a178dff7ecdb8b1d5d35e351e",
+    "server_matches_manifest": true,
+    "recompute_matches_manifest": true
+   },
+   "monitor-data_honest": {
+    "side": "honest",
+    "endpoint": "monitor-data",
+    "run_id": "f25f1eafacd749e89f1736f26d3df751",
+    "path": "checkpoints/local-monitor-activations/data/api/monitor-data_f25f1eafacd749e89f1736f26d3df751.json",
+    "fetched_now": true,
+    "bytes": 25386404,
+    "sha256": "8011dcff3eaabbd308a8bada74ff69cad5546a76f1baf83c409fdea02517e1fd",
+    "top_level_keys": [
+     "trajectories"
+    ],
+    "n_trajectories": 200,
+    "n_actions": 12675,
+    "n_actions_with_sus_score": 12675,
+    "trajectory_keys_example": [
+     "actions",
+     "run_id",
+     "side_task_success",
+     "traj_monitor_response",
+     "trajectory_id"
+    ],
+    "action_keys_example": [
+     "function",
+     "index",
+     "monitor_response",
+     "output",
+     "tool_call"
+    ],
+    "recomputed_fingerprint": "3001fb1e1086ad46701049fa211bead0a74c0a2245169b4c3038f782dea36db9",
+    "recompute_matches_manifest": false
+   },
+   "lean_attack": {
+    "side": "attack",
+    "endpoint": "lean",
+    "run_id": "30d53f5ae4f7444687459d13ccc61101",
+    "path": "checkpoints/local-monitor-activations/data/api/lean_30d53f5ae4f7444687459d13ccc61101.json",
+    "fetched_now": true,
+    "bytes": 776284,
+    "sha256": "c5b75c3a9a8cd14f844e6ad62ebb2a81f5ba11c5624be37ededa2af398121864",
+    "top_level_keys": [
+     "fingerprint",
+     "trajectories"
+    ],
+    "n_trajectories": 92,
+    "n_actions": 5097,
+    "n_actions_with_sus_score": 5097,
+    "trajectory_keys_example": [
+     "actions",
+     "environment",
+     "main_task",
+     "main_task_success",
+     "run_id",
+     "side_task",
+     "side_task_success",
+     "trajectory_id"
+    ],
+    "action_keys_example": [
+     "function",
+     "index",
+     "monitor_response"
+    ],
+    "server_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+    "recomputed_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+    "manifest_monitor_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+    "server_matches_manifest": true,
+    "recompute_matches_manifest": true
+   },
+   "monitor-data_attack": {
+    "side": "attack",
+    "endpoint": "monitor-data",
+    "run_id": "30d53f5ae4f7444687459d13ccc61101",
+    "path": "checkpoints/local-monitor-activations/data/api/monitor-data_30d53f5ae4f7444687459d13ccc61101.json",
+    "fetched_now": true,
+    "bytes": 10306406,
+    "sha256": "e9e555c2a7dbc3af6f7aba76eb89a227427c2774a58bd888764223c02acc2a69",
+    "top_level_keys": [
+     "trajectories"
+    ],
+    "n_trajectories": 92,
+    "n_actions": 5097,
+    "n_actions_with_sus_score": 5097,
+    "trajectory_keys_example": [
+     "actions",
+     "run_id",
+     "side_task",
+     "side_task_success",
+     "traj_monitor_response",
+     "trajectory_id"
+    ],
+    "action_keys_example": [
+     "function",
+     "index",
+     "monitor_response",
+     "output",
+     "tool_call"
+    ],
+    "recomputed_fingerprint": "1532d73173e9d97a5d7a17b0a73ce27995d500048caf32df24395c664166510e",
+    "recompute_matches_manifest": true
+   }
+  },
+  "note": "only the four payloads TASK.md G1.4 names were fetched: lean + monitor-data for the two MONITOR run ids. The manifest's agent_fingerprint values were not re-checked on the pod (that would need lean/<agent_run_id>)."
+ },
+ "data_files": {
+  "dir": "checkpoints/local-monitor-activations/data/export",
+  "files": {
+   "attack.jsonl": {
+    "expected_sha256": "c8a4a22b0e7ec7a94f6b4c9041f0aa42390a39a25d617672e6e31be98e194839",
+    "expected_bytes": 16408559,
+    "present": false
+   },
+   "honest.jsonl": {
+    "expected_sha256": "cbc0994d67d170585964913d836a1c9993c39497745bc7090fd96b5b5475d156",
+    "expected_bytes": 41023281,
+    "present": false
+   },
+   "trajectories.jsonl": {
+    "expected_sha256": "38e00f1434e7681425c42a8bc599855a842320f5723cd25cb1cad23691d91c93",
+    "expected_bytes": 3734996,
+    "present": false
+   }
+  },
+  "note": "honest.jsonl / attack.jsonl / trajectories.jsonl are built by track L's data_export/export.py from the mirror PLUS the 16 GB HF dump (tool arguments and task descriptions are not on the mirror). They must be copied from the laptop; run_monitor.py refuses to start without them."
+ },
+ "model": {
+  "model_id": "openai/gpt-oss-20b",
+  "snapshot": "/workspace/hf/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee",
+  "snapshot_commit": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "safetensors_files": [
+   {
+    "name": "model-00000-of-00002.safetensors",
+    "bytes": 4792272488
+   },
+   {
+    "name": "model-00001-of-00002.safetensors",
+    "bytes": 4798702184
+   },
+   {
+    "name": "model-00002-of-00002.safetensors",
+    "bytes": 4170342232
+   }
+  ],
+  "safetensors_total_gib": 12.82,
+  "config": {
+   "quantization_config": {
+    "modules_to_not_convert": [
+     "model.layers.*.self_attn",
+     "model.layers.*.mlp.router",
+     "model.embed_tokens",
+     "lm_head"
+    ],
+    "quant_method": "mxfp4"
+   },
+   "num_hidden_layers": 24,
+   "hidden_size": 2880,
+   "num_attention_heads": 64,
+   "num_key_value_heads": 8,
+   "head_dim": 64,
+   "sliding_window": 128,
+   "layer_types": [
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "full_attention"
+   ],
+   "n_sliding": 12,
+   "n_full": 12,
+   "max_position_embeddings": 131072,
+   "num_local_experts": 32,
+   "num_experts_per_tok": 4,
+   "vocab_size": 201088
+  },
+  "attention_support": {
+   "_supports_sdpa": false,
+   "_supports_flash_attn": true,
+   "_supports_flex_attn": true,
+   "flash_attn_installed": false
+  },
+  "tokenizer": {
+   "class": "TokenizersBackend",
+   "vocab_size": 200019,
+   "digit_tokens": {
+    "0": [
+     15
+    ],
+    "1": [
+     16
+    ],
+    "2": [
+     17
+    ],
+    "3": [
+     18
+    ],
+    "4": [
+     19
+    ],
+    "5": [
+     20
+    ],
+    "6": [
+     21
+    ],
+    "7": [
+     22
+    ],
+    "8": [
+     23
+    ],
+    "9": [
+     24
+    ],
+    "10": [
+     702
+    ],
+    " 10": [
+     220,
+     702
+    ],
+    " 1": [
+     220,
+     16
+    ],
+    "10</": [
+     702,
+     808
+    ]
+   },
+   "'10'_is_single_token": true,
+   "eos_token": "<|return|>",
+   "eos_token_id": 200002,
+   "pad_token_id": 199999,
+   "special": {
+    "<|return|>": 200002,
+    "<|call|>": 200012,
+    "<|start|>": 200006,
+    "<|channel|>": 200005,
+    "<|message|>": 200008,
+    "<|end|>": 200007
+   },
+   "chat_template_preview": {
+    "text": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-10\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>hi<|end|><|start|>assistant",
+    "n_tokens": 68,
+    "last_8": [
+     {
+      "id": 200007,
+      "tok": "<|end|>"
+     },
+     {
+      "id": 200006,
+      "tok": "<|start|>"
+     },
+     {
+      "id": 1428,
+      "tok": "user"
+     },
+     {
+      "id": 200008,
+      "tok": "<|message|>"
+     },
+     {
+      "id": 3686,
+      "tok": "hi"
+     },
+     {
+      "id": 200007,
+      "tok": "<|end|>"
+     },
+     {
+      "id": 200006,
+      "tok": "<|start|>"
+     },
+     {
+      "id": 173781,
+      "tok": "assistant"
+     }
+    ]
+   }
+  },
+  "load": {
+   "seconds": 34.6,
+   "attn_implementation": "eager",
+   "dtype_arg": "bfloat16",
+   "device_map": {
+    "": 0
+   },
+   "get_memory_footprint_bytes": 3622190464,
+   "get_memory_footprint_gib": 3.37,
+   "cuda_memory_allocated_gib": 12.83,
+   "cuda_max_memory_allocated_gib": 12.83,
+   "hf_quantizer_class": "Mxfp4HfQuantizer",
+   "quantizer_dequantize_flag": false,
+   "config_quantization_config": {
+    "quant_method": "mxfp4",
+    "modules_to_not_convert": [
+     "model.layers.*.self_attn",
+     "model.layers.*.mlp.router",
+     "model.embed_tokens",
+     "lm_head"
+    ]
+   },
+   "n_parameters_registered": 1804459584,
+   "parameter_numel_by_dtype": {
+    "torch.bfloat16": 1797824064,
+    "torch.float32": 6635520,
+    "buffer:torch.float32": 64
+   },
+   "experts": {
+    "layer_0": {
+     "class": "Mxfp4GptOssExperts",
+     "tensors": {
+      "gate_up_proj_bias": {
+       "type": "Parameter",
+       "dtype": "torch.float32",
+       "shape": [
+        32,
+        5760
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj_bias": {
+       "type": "Parameter",
+       "dtype": "torch.float32",
+       "shape": [
+        32,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "gate_up_proj_precision_config.weight_scale": {
+       "type": "Tensor",
+       "dtype": "torch.uint8",
+       "shape": [
+        32,
+        90,
+        5760
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj_precision_config.weight_scale": {
+       "type": "Tensor",
+       "dtype": "torch.uint8",
+       "shape": [
+        32,
+        90,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj": {
+       "type": "Tensor",
+       "dtype": "FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)",
+       "shape": [
+        32,
+        2880,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "gate_up_proj": {
+       "type": "Tensor",
+       "dtype": "FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)",
+       "shape": [
+        32,
+        2880,
+        5760
+       ],
+       "device": "cuda:0"
+      }
+     }
+    },
+    "layer_12": {
+     "class": "Mxfp4GptOssExperts",
+     "tensors": {
+      "gate_up_proj_bias": {
+       "type": "Parameter",
+       "dtype": "torch.float32",
+       "shape": [
+        32,
+        5760
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj_bias": {
+       "type": "Parameter",
+       "dtype": "torch.float32",
+       "shape": [
+        32,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "gate_up_proj_precision_config.weight_scale": {
+       "type": "Tensor",
+       "dtype": "torch.uint8",
+       "shape": [
+        32,
+        90,
+        5760
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj_precision_config.weight_scale": {
+       "type": "Tensor",
+       "dtype": "torch.uint8",
+       "shape": [
+        32,
+        90,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj": {
+       "type": "Tensor",
+       "dtype": "FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)",
+       "shape": [
+        32,
+        2880,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "gate_up_proj": {
+       "type": "Tensor",
+       "dtype": "FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)",
+       "shape": [
+        32,
+        2880,
+        5760
+       ],
+       "device": "cuda:0"
+      }
+     }
+    },
+    "layer_23": {
+     "class": "Mxfp4GptOssExperts",
+     "tensors": {
+      "gate_up_proj_bias": {
+       "type": "Parameter",
+       "dtype": "torch.float32",
+       "shape": [
+        32,
+        5760
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj_bias": {
+       "type": "Parameter",
+       "dtype": "torch.float32",
+       "shape": [
+        32,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "gate_up_proj_precision_config.weight_scale": {
+       "type": "Tensor",
+       "dtype": "torch.uint8",
+       "shape": [
+        32,
+        90,
+        5760
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj_precision_config.weight_scale": {
+       "type": "Tensor",
+       "dtype": "torch.uint8",
+       "shape": [
+        32,
+        90,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "down_proj": {
+       "type": "Tensor",
+       "dtype": "FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)",
+       "shape": [
+        32,
+        2880,
+        2880
+       ],
+       "device": "cuda:0"
+      },
+      "gate_up_proj": {
+       "type": "Tensor",
+       "dtype": "FloatType(bitwidth_exponent=2, bitwidth_mantissa=1, is_signed=True)",
+       "shape": [
+        32,
+        2880,
+        5760
+       ],
+       "device": "cuda:0"
+      }
+     }
+    }
+   },
+   "n_decoder_layers": 24
+  },
+  "tests": {
+   "prompt_n_tokens": 79,
+   "eager": {
+    "top5_next_token": [
+     {
+      "tok": "<|channel|>",
+      "p": 1.0
+     },
+     {
+      "tok": "<|constrain|>",
+      "p": 0.0
+     },
+     {
+      "tok": " ",
+      "p": 0.0
+     },
+     {
+      "tok": "<|message|>",
+      "p": 0.0
+     },
+     {
+      "tok": " d",
+      "p": 0.0
+     }
+    ],
+    "peak_gib": 12.9,
+    "generate_64_seconds": 5.4,
+    "generated_text": "<|channel|>analysis<|message|>The user asks: \"What is the capital of France? Answer in one word.\" The answer is \"Paris\". So respond with \"Paris\".<|end|><|start|>assistant<|channel|>final<|message|>Paris<|return|>"
+   },
+   "flex": {
+    "attn_implementation": "flex_attention"
+   },
+   "flex_error": "Traceback (most recent call last):\n  File \"/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g1_env.py\", line 398, in _model\n    out = model(ids)\n          ^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1783, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1794, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/models/gpt_oss/modeling_gpt_oss.py\", line 630, in forward\n    outputs: MoeModelOutputWithPast = self.model(\n                                      ^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1783, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1794, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/utils/generic.py\", line 1068, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py\", line 286, in wrapper\n    outputs = func(self, *args, **kwargs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/models/gpt_oss/modeling_gpt_oss.py\", line 483, in forward\n    hidden_states = decoder_layer(\n                    ^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/modeling_layers.py\", line 109, in __call__\n    return super().__call__(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1783, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1794, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/models/gpt_oss/modeling_gpt_oss.py\", line 360, in forward\n    hidden_states, _ = self.self_attn(\n                       ^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1783, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1794, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/models/gpt_oss/modeling_gpt_oss.py\", line 320, in forward\n    attn_output, attn_weights = attention_interface(\n                                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/integrations/flex_attention.py\", line 320, in flex_attention_forward\n    flex_attention_output = compile_friendly_flex_attention(\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/integrations/flex_attention.py\", line 124, in compile_friendly_flex_attention\n    return flex_attention_compiled(\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1278, in compile_wrapper\n    raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py\", line 1192, in _compile_fx_inner\n    raise InductorError(e, currentframe()).with_traceback(\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py\", line 1169, in _compile_fx_inner\n    mb_compiled_graph = fx_codegen_and_compile(\n                        ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py\", line 2001, in fx_codegen_and_compile\n    return scheme.codegen_and_compile(gm, example_inputs, inputs_to_check, graph_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py\", line 1660, in codegen_and_compile\n    graph.run(*example_inputs)\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/graph.py\", line 1135, in run\n    return super().run(*args)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/fx/interpreter.py\", line 197, in run\n    self.env[node] = self.run_node(node)\n                     ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/graph.py\", line 2062, in run_node\n    result = super().run_node(n)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/fx/interpreter.py\", line 294, in run_node\n    return getattr(self, n.op)(n.target, args, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/graph.py\", line 1567, in call_function\n    raise LoweringException(\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/graph.py\", line 1544, in call_function\n    out = lowerings[target](*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/lowering.py\", line 525, in wrapped\n    out = decomp_fn(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/kernel/flex/flex_attention.py\", line 293, in flex_attention\n    return create_flex_decoding_kernel(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/kernel/flex/flex_decoding.py\", line 387, in create_flex_decoding_kernel\n    raise_flex_decoding_kernel_options_error(\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/_inductor/kernel/flex/flex_decoding.py\", line 52, in raise_flex_decoding_kernel_options_error\n    raise ValueError(\ntorch._inductor.exc.InductorError: LoweringException: ValueError: Invalid FlexAttention decode kernel options: Q and KV block sizes must be divisible by the selected tile sizes. Got SPARSE_Q_BLOCK_SIZE=128, SPARSE_KV_BLOCK_SIZE=128, and BLOCK_M=1024, BLOCK_N=64. Pass compatible values with kernel_options. Available decode tuning options are BLOCK_M, BLOCK_N, num_warps, and num_stages; use the fwd_ prefix to set decode-only options. For example: kernel_options={'fwd_BLOCK_M': 32, 'fwd_BLOCK_N': 64, 'fwd_num_stages': 1, 'fwd_num_warps': 4}. If you did not pin these options, compiling with mode='max-autotune-no-cudagraphs' can also fix this by trying more FlexAttention configs.\n  target: flex_attention\n  args[0]: TensorBox(StorageBox(\n    InputBuffer(name='arg0_1', layout=FixedLayout('cuda:0', torch.bfloat16, size=[1, 64, 79, 64], stride=[323584, 5056, 64, 1]))\n  ))\n  args[1]: TensorBox(StorageBox(\n    InputBuffer(name='arg1_1', layout=FixedLayout('cuda:0', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[2]: TensorBox(StorageBox(\n    InputBuffer(name='arg2_1', layout=FixedLayout('cuda:0', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[3]: Subgraph(name='sdpa_score0', graph_module=<lambda>(), inductor_config_patches=None, graph=None)\n  args[4]: (79, 79, TensorBox(StorageBox(\n    InputBuffer(name='arg4_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg3_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg5_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg6_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg7_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg8_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg9_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg10_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), None, None, None, None, 128, 128, Subgraph(name='sdpa_mask0', graph_module=<lambda>(), inductor_config_patches=None, graph=None))\n  args[5]: 0.125\n  args[6]: {'BACKEND': 'AUTO', 'PRESCALE_QK': False, 'ROWS_GUARANTEED_SAFE': False, 'BLOCKS_ARE_CONTIGUOUS': False, 'WRITE_DQ': True, 'OUTPUT_LOGSUMEXP': True, 'OUTPUT_MAX': False}\n  args[7]: ()\n  args[8]: ()ValueError: Invalid FlexAttention decode kernel options: Q and KV block sizes must be divisible by the selected tile sizes. Got SPARSE_Q_BLOCK_SIZE=128, SPARSE_KV_BLOCK_SIZE=128, and BLOCK_M=1024, BLOCK_N=64. Pass compatible values with kernel_options. Available decode tuning options are BLOCK_M, BLOCK_N, num_warps, and num_stages; use the fwd_ prefix to set decode-only options. For example: kernel_options={'fwd_BLOCK_M': 32, 'fwd_BLOCK_N': 64, 'fwd_num_stages': 1, 'fwd_num_warps': 4}. If you did not pin these options, compiling with mode='max-autotune-no-cudagraphs' can also fix this by trying more FlexAttention configs.\n  target: flex_attention\n  args[0]: TensorBox(StorageBox(\n    InputBuffer(name='arg0_1', layout=FixedLayout('cuda:0', torch.bfloat16, size=[1, 64, 79, 64], stride=[323584, 5056, 64, 1]))\n  ))\n  args[1]: TensorBox(StorageBox(\n    InputBuffer(name='arg1_1', layout=FixedLayout('cuda:0', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[2]: TensorBox(StorageBox(\n    InputBuffer(name='arg2_1', layout=FixedLayout('cuda:0', torch.bfloat16, size=[1, 8, 79, 64], stride=[40448, 5056, 64, 1]))\n  ))\n  args[3]: Subgraph(name='sdpa_score0', graph_module=<lambda>(), inductor_config_patches=None, graph=None)\n  args[4]: (79, 79, TensorBox(StorageBox(\n    InputBuffer(name='arg4_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg3_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg5_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg6_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg7_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg8_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg9_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg10_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), None, None, None, None, 128, 128, Subgraph(name='sdpa_mask0', graph_module=<lambda>(), inductor_config_patches=None, graph=None))\n  args[5]: 0.125\n  args[6]: {'BACKEND': 'AUTO', 'PRESCALE_QK': False, 'ROWS_GUARANTEED_SAFE': False, 'BLOCKS_ARE_CONTIGUOUS': False, 'WRITE_DQ': True, 'OUTPUT_LOGSUMEXP': True, 'OUTPUT_MAX': False}\n  args[7]: ()\n  args[8]: ()\nFound from : \n   File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py\", line 2577, in flex_attention\n    out, lse, max_scores = flex_attention_hop(\n                           ^^^^^^^^^^^^^^^^^^^\n\n\nSet TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS=\"+dynamo\"\n\n"
+  }
+ },
+ "finished": "2026-09-10T07:11:27.224196+00:00"
+}

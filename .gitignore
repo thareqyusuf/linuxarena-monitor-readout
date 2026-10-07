@@ -1,0 +1,26 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Jupyter collaboration state (per-session, binary, regenerated on every open)
+.jupyter/
+.jupyter_ystore.db
+
+# Large / regenerable. results/raw/<slug>, results/figures/<slug> and
+# logs/<slug> are COMMITTED on the exp/<slug> branch -- they are the evidence
+# the laptop-side review reads. See CLAUDE.md "Branches" and "Handoff".
+checkpoints/
+hf/
+
+# Full per-action trajectory exports with tool text (regenerable by
+# experiments/<slug>/data_export/export.py; far over the 10 MB raw limit).
+# The compact numbers live in results/raw/<slug>/ and are committed.
+experiments/*/data_export/data/*.jsonl
+
+# Agent session transcripts and scratch — never part of the record
+*.jsonl
+!results/raw/**/*.jsonl
+!experiments/**/*.jsonl
+.claude/
+memory/

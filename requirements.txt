@@ -1,0 +1,8 @@
+# Analysis / figure scripts (CPU). The monitor pass and probe capture need the
+# GPU stack in experiments/logit-curve-replication/gpu/requirements.txt and
+# infra/constraints.txt.
+numpy
+scipy
+scikit-learn
+matplotlib
+joblib

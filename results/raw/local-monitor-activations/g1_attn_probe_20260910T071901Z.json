@@ -1,0 +1,118 @@
+{
+ "slug": "local-monitor-activations",
+ "script": "experiments/local-monitor-activations/g1_attn_probe.py",
+ "timestamp": "20260910T071901Z",
+ "model_id": "openai/gpt-oss-20b",
+ "torch": "2.14.0+cu130",
+ "git_commit": "ce1babc31886fb44042fb20aa0f9bad23c0e5d96",
+ "chunk_target_elems": 268435456,
+ "model_cuda_allocated_gib": 12.83,
+ "transformers": "5.17.0",
+ "eager": {
+  "peak_gib_79": 12.95,
+  "peak_gib_2048": 15.16,
+  "gen79": "<|channel|>analysis<|message|>The user asks: \"What is the capital of France? Answer in one word.\" The answer is \"Paris\". So respond with \"Paris\".<|end|><|start|>assistant<|channel|>final<|message|>Paris<|return|>"
+ },
+ "flex": {
+  "attn_implementation": "flex_attention",
+  "default": {
+   "prefill256_seconds": 46.7,
+   "prefill256_max_abs_logit_diff_vs_eager_last": null,
+   "prefill256_ok": true,
+   "compare_error": "1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg11_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg12_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg13_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg14_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg15_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), None, None, None, None, 128, 128, Subgraph(name='sdpa_mask0', graph_module=<lambda>(), inductor_config_patches=None, graph=None))\n  args[5]: 0.125\n  args[6]: {'BACKEND': 'AUTO', 'PRESCALE_QK': False, 'ROWS_GUARANTEED_SAFE': False, 'BLOCKS_ARE_CONTIGUOUS': False, 'WRITE_DQ': True, 'OUTPUT_LOGSUMEXP': True, 'OUTPUT_MAX': False}\n  args[7]: ()\n  args[8]: ()\nFound from : \n   File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py\", line 2577, in flex_attention\n    out, lse, max_scores = flex_attention_hop(\n                           ^^^^^^^^^^^^^^^^^^^\n\n\nSet TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS=\"+dynamo\"\n\n",
+   "gen_error": "1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg11_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg12_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg13_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg14_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1], stride=[1, 1, 1]))\n  )), TensorBox(StorageBox(\n    InputBuffer(name='arg15_1', layout=FixedLayout('cuda:0', torch.int32, size=[1, 1, 1, 1], stride=[1, 1, 1, 1]))\n  )), None, None, None, None, 128, 128, Subgraph(name='sdpa_mask0', graph_module=<lambda>(), inductor_config_patches=None, graph=None))\n  args[5]: 0.125\n  args[6]: {'BACKEND': 'AUTO', 'PRESCALE_QK': False, 'ROWS_GUARANTEED_SAFE': False, 'BLOCKS_ARE_CONTIGUOUS': False, 'WRITE_DQ': True, 'OUTPUT_LOGSUMEXP': True, 'OUTPUT_MAX': False}\n  args[7]: ()\n  args[8]: ()\nFound from : \n   File \"/workspace/venv/lib/python3.12/site-packages/torch/nn/attention/flex_attention.py\", line 2577, in flex_attention\n    out, lse, max_scores = flex_attention_hop(\n                           ^^^^^^^^^^^^^^^^^^^\n\n\nSet TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS=\"+dynamo\"\n\n"
+  },
+  "kernel_options_BLOCK64": {
+   "prefill256_seconds": 3.0,
+   "prefill256_max_abs_logit_diff_vs_eager_last": null,
+   "prefill256_ok": true,
+   "compare": {
+    "peak_gib_79": 13.01,
+    "max_abs_logit_diff_79_all_positions": 6.5,
+    "max_abs_logit_diff_79_last_position": 3.082,
+    "argmax_agreement_79": 0.8987,
+    "peak_gib_2048": 15.16,
+    "max_abs_logit_diff_2048_all_positions": 1.4062,
+    "max_abs_logit_diff_2048_last_position": 0.0625,
+    "argmax_agreement_2048": 0.9907
+   },
+   "gen_error": "Traceback (most recent call last):\n  File \"/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g1_attn_probe.py\", line 125, in <module>\n    rec[\"gen79\"] = greedy(ids79, **kw); rec[\"gen79_same_as_eager\"] = rec[\"gen79\"] == ref[\"gen79\"]\n                   ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g1_attn_probe.py\", line 80, in greedy\n    g = model.generate(ids, max_new_tokens=n, do_sample=False, **kw)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/generation/utils.py\", line 2617, in generate\n    self._validate_model_kwargs(model_kwargs.copy())\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/generation/utils.py\", line 1793, in _validate_model_kwargs\n    raise ValueError(\nValueError: The following `model_kwargs` are not used by the model: ['kernel_options'] (note: typos in the generate arguments will also show up in this list)\n"
+  },
+  "kernel_options_fwd32_64": {
+   "prefill256_seconds": 2.2,
+   "prefill256_max_abs_logit_diff_vs_eager_last": null,
+   "prefill256_ok": true,
+   "compare": {
+    "peak_gib_79": 12.95,
+    "max_abs_logit_diff_79_all_positions": 7.6406,
+    "max_abs_logit_diff_79_last_position": 3.6562,
+    "argmax_agreement_79": 0.8734,
+    "peak_gib_2048": 15.16,
+    "max_abs_logit_diff_2048_all_positions": 1.4062,
+    "max_abs_logit_diff_2048_last_position": 0.0625,
+    "argmax_agreement_2048": 0.9912
+   },
+   "gen_error": "Traceback (most recent call last):\n  File \"/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g1_attn_probe.py\", line 125, in <module>\n    rec[\"gen79\"] = greedy(ids79, **kw); rec[\"gen79_same_as_eager\"] = rec[\"gen79\"] == ref[\"gen79\"]\n                   ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g1_attn_probe.py\", line 80, in greedy\n    g = model.generate(ids, max_new_tokens=n, do_sample=False, **kw)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/generation/utils.py\", line 2617, in generate\n    self._validate_model_kwargs(model_kwargs.copy())\n  File \"/workspace/venv/lib/python3.12/site-packages/transformers/generation/utils.py\", line 1793, in _validate_model_kwargs\n    raise ValueError(\nValueError: The following `model_kwargs` are not used by the model: ['kernel_options'] (note: typos in the generate arguments will also show up in this list)\n"
+  }
+ },
+ "chunked_eager": {
+  "attn_implementation": "chunked_eager",
+  "compare": {
+   "peak_gib_79": 12.95,
+   "max_abs_logit_diff_79_all_positions": 4.9375,
+   "max_abs_logit_diff_79_last_position": 0.9375,
+   "argmax_agreement_79": 0.9747,
+   "peak_gib_2048": 16.44,
+   "max_abs_logit_diff_2048_all_positions": 1.4824,
+   "max_abs_logit_diff_2048_last_position": 0.0547,
+   "argmax_agreement_2048": 0.9927
+  },
+  "gen79": "<|channel|>analysis<|message|>The user asks: \"What is the capital of France? Answer in one word.\" The answer is \"Paris\". So respond with \"Paris\".<|end|><|start|>assistant<|channel|>final<|message|>Paris<|return|>",
+  "gen79_same_as_eager": true,
+  "prefill": {
+   "4096": {
+    "seconds": 1.7,
+    "peak_gib": 16.68,
+    "logits_finite": true,
+    "kv_full_layer_tokens": 4096,
+    "kv_sliding_layer_tokens": 127
+   },
+   "16384": {
+    "seconds": 8.5,
+    "peak_gib": 17.63,
+    "logits_finite": true,
+    "kv_full_layer_tokens": 16384,
+    "kv_sliding_layer_tokens": 127,
+    "generate16_after_prefill_seconds": 8.2,
+    "generate16_text": "<|vq_clip_12273|>this is a screenshot of a",
+    "generate16_peak_gib": 18.38
+   },
+   "32768": {
+    "seconds": 27.6,
+    "peak_gib": 18.9,
+    "logits_finite": true,
+    "kv_full_layer_tokens": 32768,
+    "kv_sliding_layer_tokens": 127
+   },
+   "65536": {
+    "seconds": 108.4,
+    "peak_gib": 21.43,
+    "logits_finite": true,
+    "kv_full_layer_tokens": 65536,
+    "kv_sliding_layer_tokens": 127
+   },
+   "98304": {
+    "seconds": 270.9,
+    "peak_gib": 24.24,
+    "logits_finite": true,
+    "kv_full_layer_tokens": 98304,
+    "kv_sliding_layer_tokens": 127
+   },
+   "131072": {
+    "oom": true,
+    "error": "CUDA out of memory. Tried to allocate 3.52 GiB. GPU 0 has a total capacity of 31.36 GiB of which 2.18 GiB is free. Including non-PyTorch memory, this process has 29.17 GiB memory in use. Of the allocated memory 22.02 GiB is allocated by PyTorch, and 6.24 GiB is reserved by PyTorch but unallocated. I"
+   }
+  }
+ },
+ "finished": "2026-09-10T07:33:14.429834+00:00"
+}

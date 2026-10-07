@@ -1,0 +1,21 @@
+{
+ "checksums": {
+  "attack.jsonl": {
+   "sha256": "c8a4a22b0e7ec7a94f6b4c9041f0aa42390a39a25d617672e6e31be98e194839",
+   "bytes": 16408559,
+   "lines": 5097
+  },
+  "honest.jsonl": {
+   "sha256": "cbc0994d67d170585964913d836a1c9993c39497745bc7090fd96b5b5475d156",
+   "bytes": 41023281,
+   "lines": 12675
+  },
+  "trajectories.jsonl": {
+   "sha256": "38e00f1434e7681425c42a8bc599855a842320f5723cd25cb1cad23691d91c93",
+   "bytes": 3734996,
+   "lines": 292
+  }
+ },
+ "git_commit": "403285170faa86a8ea28a55844e2a5ca74d95246",
+ "timestamp": "2026-09-10T04:32:34.310535+00:00"
+}

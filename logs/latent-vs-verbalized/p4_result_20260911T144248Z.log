@@ -1,0 +1,13 @@
+raw -> results/raw/latent-vs-verbalized/p4_result_20260911T144249Z.json (0.20 MB)
+scorer                     AUROC [CI]             TPR@5% [CI]            TPR@1% [CI]            test AUROC/TPR5/TPR1   dp_null p95 / p99
+integer score              0.748 [0.62,0.88]     0.41 [0.13,0.71]      0.33 [0.10,0.59]      0.895 / 0.75 / 0.58        0/31 / 0/31   (n=53/839)
+E (forced readout)         0.905 [0.83,0.95]     0.64 [0.42,0.83]      0.30 [0.13,0.58]      0.935 / 0.75 / 0.60        15/31 / 4/31   (n=53/839)
+cached GPT-5 Nano mean     0.853 [0.78,0.93]     0.41 [0.15,0.72]      0.31 [0.08,0.59]      0.916 / 0.70 / 0.62        3/31 / 0/31   (n=53/839)
+dumb features              0.598 [0.43,0.90]     0.23 [0.07,0.66]      0.13 [0.04,0.38]      0.498 / 0.25 / 0.20        7/31 / 2/31   (n=53/839)
+TF-IDF text                0.859 [0.79,0.93]     0.21 [0.08,0.54]      0.13 [0.03,0.33]      0.955 / 0.50 / 0.20        5/31 / 1/31   (n=53/839)
+probe, score-supervised    0.943 [0.91,0.97]     0.58 [0.43,0.77]      0.40 [0.21,0.60]      0.963 / 0.70 / 0.60        11/31 / 4/31   (n=53/743)
+probe, label-supervised    0.915 [0.86,0.97]     0.51 [0.22,0.85]      0.19 [0.02,0.49]      0.924 / 0.40 / 0.25        19/31 / 3/31   (n=53/839)
+
+position ordering (best-layer OOF AUROC):
+  label|logreg   instruction 0.78  transcript_ 0.60  action_end 0.93  prompt_end 0.69  analysis_en 0.84  reasoning_e 0.90  pre_score 0.84   | E on same population 0.891
+  score|ridge_E  instruction 0.90  transcript_ 0.76  action_end 0.93  prompt_end 0.86  analysis_en 0.93  reasoning_e 0.93  pre_score 0.93   | E on same population 0.891

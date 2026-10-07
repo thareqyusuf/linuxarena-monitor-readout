@@ -1,0 +1,696 @@
+{
+ "slug": "local-monitor-activations",
+ "script": "experiments/local-monitor-activations/g6_integrity.py",
+ "timestamp": "20260911T124606Z",
+ "git_commit": "0153b29153147d668de2fb973aa07d8ad7afcc7b",
+ "run_order_sha256": "df4452987821ed71be2c963545e37ade63fe04f53972259d6326c2bab3875497",
+ "stages": {
+  "cf_neutralized": {
+   "stage": "cf_neutralized",
+   "dir": "checkpoints/local-monitor-activations/out/cf_neutralized",
+   "exists": true,
+   "n_files": 13,
+   "manifest": {
+    "acts_0000.pt": {
+     "bytes": 25209715,
+     "sha256": "9254b6cf3241136c7ce0f12a01cf23c473d1236b602739849c1143c81607b882"
+    },
+    "acts_0001.pt": {
+     "bytes": 25209715,
+     "sha256": "d302719be4027f5059b9db54f3941ba4b7a3f2b0a7ffd68b98c451ad399f320f"
+    },
+    "acts_0002.pt": {
+     "bytes": 25209715,
+     "sha256": "0503a70ebe132fa325a6b8d6f83444214c14b5889bcf805e777089af7d739a13"
+    },
+    "acts_0003.pt": {
+     "bytes": 25209715,
+     "sha256": "10d98e804d9f5738b0748723554cbd2d6148a2c2e8b73d290c6ea03c8cf4338c"
+    },
+    "acts_0004.pt": {
+     "bytes": 25209715,
+     "sha256": "85c0d10daf0a19e2e4a018f497efb56d91e023084197bb1e019c8f338d10aeb8"
+    },
+    "acts_0005.pt": {
+     "bytes": 25209715,
+     "sha256": "f00a40f76bdc290097dfceddebf4f44eccff252bad49712a36e88fdfc98cdaf4"
+    },
+    "acts_0006.pt": {
+     "bytes": 25209715,
+     "sha256": "88821c2ac14520fe18fffb9b77dd58da66d566266cc248131648a29f520c62fd"
+    },
+    "acts_0007.pt": {
+     "bytes": 25209715,
+     "sha256": "fe1d563e80b7e2db8ddc1d0d1a1f9331a9f5738d3a22a04d3150eb52a7d28289"
+    },
+    "acts_0008.pt": {
+     "bytes": 25209715,
+     "sha256": "b8da406bad603efa0cb6dee9eb43ad732c513cbd9a62a26184a26c8c0664ad54"
+    },
+    "acts_0009.pt": {
+     "bytes": 25209715,
+     "sha256": "6697bef80e6300dd1188ec1dcb54ea6747285076d8b503ff858e448008e6165b"
+    },
+    "acts_index.json": {
+     "bytes": 13100,
+     "sha256": "80737b5962e54f7e8270e7cbbe55d2ece45f3b179aedb165d1a85e85ded7639d"
+    },
+    "run_meta.json": {
+     "bytes": 3834,
+     "sha256": "04740988e40dada133722151636cda2151013293d2d940202d22ef12a9ee75e7"
+    },
+    "scores.jsonl": {
+     "bytes": 2623551,
+     "sha256": "2f845f12898cf3ef87682d135ea7e4266a6973a3ac8e9c60241213a2d6e6f467"
+    }
+   },
+   "scores_lines": 250,
+   "unique_keys": 250,
+   "duplicate_keys": 0,
+   "by_status": {
+    "ok": 250
+   },
+   "n_shards": 10,
+   "shards": {
+    "acts_0000.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0001.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0002.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0003.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0004.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0005.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0006.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0007.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0008.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0009.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    }
+   },
+   "all_shards_load": true,
+   "shard_keys_eq_ok_keys": true,
+   "n_shard_keys": 250,
+   "n_ok_keys": 250,
+   "index_position_order": [
+    "instruction_end",
+    "transcript_end",
+    "action_end",
+    "prompt_end",
+    "analysis_end",
+    "reasoning_end",
+    "pre_score"
+   ],
+   "stage_size": 250,
+   "n_not_yet_done": 0,
+   "keys_outside_stage": 0,
+   "line_count_identity": true,
+   "bak_files": [],
+   "one_tensor": {
+    "shard": "acts_0000.pt",
+    "key": "30e71655380946e2aae7b6d871da790d|2|neutralized",
+    "shape": [
+     7,
+     25,
+     2880
+    ],
+    "dtype": "torch.float16",
+    "position_order": [
+     "instruction_end",
+     "transcript_end",
+     "action_end",
+     "prompt_end",
+     "analysis_end",
+     "reasoning_end",
+     "pre_score"
+    ],
+    "row_finite": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "row_norm_last_layer": [
+     22532.896484375,
+     19283.109375,
+     13498.4384765625,
+     23172.80078125,
+     26778.37109375,
+     20574.19921875,
+     23350.341796875
+    ]
+   },
+   "raw_copies": [
+    {
+     "path": "results/raw/local-monitor-activations/g4_cf_neutralized_scores_20260911T124606Z_part1.jsonl",
+     "lines": 250,
+     "bytes": 2623551,
+     "sha256": "2f845f12898cf3ef87682d135ea7e4266a6973a3ac8e9c60241213a2d6e6f467"
+    }
+   ],
+   "pass": true
+  },
+  "cf_random_scrub": {
+   "stage": "cf_random_scrub",
+   "dir": "checkpoints/local-monitor-activations/out/cf_random_scrub",
+   "exists": true,
+   "n_files": 13,
+   "manifest": {
+    "acts_0000.pt": {
+     "bytes": 25209715,
+     "sha256": "5bd41c04d0fd361bdcd9accaa75b15fceab264ac0e602a4eb13b8acb6dc1ba14"
+    },
+    "acts_0001.pt": {
+     "bytes": 25209715,
+     "sha256": "b539efd884d059bf2a24d6217b6e94b8f9d6b570ef7cd615c8b575ccf2bb3b83"
+    },
+    "acts_0002.pt": {
+     "bytes": 25209715,
+     "sha256": "3b3b5b08e639fb7baec120f9cd3009c593292363e86857cc94bfec4812434484"
+    },
+    "acts_0003.pt": {
+     "bytes": 25209715,
+     "sha256": "40e1e728b64b55c5e4b08bf0e36fec56652a384585ad653b174423b992c83ef2"
+    },
+    "acts_0004.pt": {
+     "bytes": 25209715,
+     "sha256": "f7ba3c4b2a21ffc251c413f60fc605c0c5d7b8d5d312fd051247302a281b0583"
+    },
+    "acts_0005.pt": {
+     "bytes": 25209715,
+     "sha256": "2fb44b11f06a86c7706165b8c855ef05f9b64b1f279ac967c9da1ec464b53d02"
+    },
+    "acts_0006.pt": {
+     "bytes": 25209715,
+     "sha256": "dcf382e13e9fa6f433a0eb7c99fff3edac7745d9299178a90820733d6d7ee49c"
+    },
+    "acts_0007.pt": {
+     "bytes": 25209715,
+     "sha256": "e405759044d8633621033e2dd66e8745a25c3f970cb87c0496082804646bf2e6"
+    },
+    "acts_0008.pt": {
+     "bytes": 25209715,
+     "sha256": "f60d46851985cb528a7159717cf2938b8523e83adb3e68ca41fc335c7f18ff46"
+    },
+    "acts_0009.pt": {
+     "bytes": 25209715,
+     "sha256": "02d4885458dec62f7803ba5607a1d46e333f5a8d1a6fd0d668118058a3b4a3a5"
+    },
+    "acts_index.json": {
+     "bytes": 13350,
+     "sha256": "60ca3df7dddf372efb58aa373329e75eaa45c23568453fdf6a0c4027f2b75e6a"
+    },
+    "run_meta.json": {
+     "bytes": 3835,
+     "sha256": "656940872802ef41cc8ef41a65b62c4c8420d3d792eae885d6cb81f81c1d6247"
+    },
+    "scores.jsonl": {
+     "bytes": 2624459,
+     "sha256": "1b0174289b1d125d64fe4faf0928ffede4311414e16f65cfd359cde96d77eba1"
+    }
+   },
+   "scores_lines": 250,
+   "unique_keys": 250,
+   "duplicate_keys": 0,
+   "by_status": {
+    "ok": 250
+   },
+   "n_shards": 10,
+   "shards": {
+    "acts_0000.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0001.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0002.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0003.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0004.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0005.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0006.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0007.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0008.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0009.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    }
+   },
+   "all_shards_load": true,
+   "shard_keys_eq_ok_keys": true,
+   "n_shard_keys": 250,
+   "n_ok_keys": 250,
+   "index_position_order": [
+    "instruction_end",
+    "transcript_end",
+    "action_end",
+    "prompt_end",
+    "analysis_end",
+    "reasoning_end",
+    "pre_score"
+   ],
+   "stage_size": 250,
+   "n_not_yet_done": 0,
+   "keys_outside_stage": 0,
+   "line_count_identity": true,
+   "bak_files": [],
+   "one_tensor": {
+    "shard": "acts_0000.pt",
+    "key": "30e71655380946e2aae7b6d871da790d|2|random_scrub",
+    "shape": [
+     7,
+     25,
+     2880
+    ],
+    "dtype": "torch.float16",
+    "position_order": [
+     "instruction_end",
+     "transcript_end",
+     "action_end",
+     "prompt_end",
+     "analysis_end",
+     "reasoning_end",
+     "pre_score"
+    ],
+    "row_finite": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "row_norm_last_layer": [
+     22621.603515625,
+     19454.69921875,
+     13961.103515625,
+     23311.318359375,
+     26953.619140625,
+     19200.94921875,
+     24320.732421875
+    ]
+   },
+   "raw_copies": [
+    {
+     "path": "results/raw/local-monitor-activations/g4_cf_random_scrub_scores_20260911T124606Z_part1.jsonl",
+     "lines": 250,
+     "bytes": 2624459,
+     "sha256": "1b0174289b1d125d64fe4faf0928ffede4311414e16f65cfd359cde96d77eba1"
+    }
+   ],
+   "pass": true
+  }
+ },
+ "all_pass": true
+}

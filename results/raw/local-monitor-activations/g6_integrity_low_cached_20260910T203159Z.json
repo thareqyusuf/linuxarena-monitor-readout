@@ -1,0 +1,153 @@
+{
+ "slug": "local-monitor-activations",
+ "script": "experiments/local-monitor-activations/g6_integrity.py",
+ "timestamp": "20260910T203159Z",
+ "git_commit": "b698e3b004d5549de5d07f5d3424fce3ffd514b5",
+ "run_order_sha256": "df4452987821ed71be2c963545e37ade63fe04f53972259d6326c2bab3875497",
+ "stages": {
+  "low_cached": {
+   "stage": "low_cached",
+   "dir": "checkpoints/local-monitor-activations/out/low_cached",
+   "exists": true,
+   "n_files": 5,
+   "manifest": {
+    "acts_0000.pt": {
+     "bytes": 25209651,
+     "sha256": "4c586ce65473c1fbf6d6183eab4e25b74dd095799d7b6f725f57f6dc613b0897"
+    },
+    "acts_0001.pt": {
+     "bytes": 15126495,
+     "sha256": "d92bae4270998ece5318586d404d19c53572c939e68df8b0fcb523060e8b6b85"
+    },
+    "acts_index.json": {
+     "bytes": 2141,
+     "sha256": "d2f7b963d3ce65ddf2820f6135234f3b6069ef0f27274eb65aeaafe20bf7132e"
+    },
+    "run_meta.json": {
+     "bytes": 3819,
+     "sha256": "4f3e0d1d2cddeb6f98f47d6daa5cdfac083e72ab779223a59c6c1896c2d84030"
+    },
+    "scores.jsonl": {
+     "bytes": 384787,
+     "sha256": "2e28f9393236dcbda9e93017576293b34da61a7df5803502274d9e989b2b76f6"
+    }
+   },
+   "scores_lines": 40,
+   "unique_keys": 40,
+   "duplicate_keys": 0,
+   "by_status": {
+    "ok": 40
+   },
+   "n_shards": 2,
+   "shards": {
+    "acts_0000.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0001.pt": {
+     "loads": true,
+     "n": 15,
+     "index_n": 15,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    }
+   },
+   "all_shards_load": true,
+   "shard_keys_eq_ok_keys": true,
+   "n_shard_keys": 40,
+   "n_ok_keys": 40,
+   "index_position_order": [
+    "instruction_end",
+    "transcript_end",
+    "action_end",
+    "prompt_end",
+    "analysis_end",
+    "reasoning_end",
+    "pre_score"
+   ],
+   "stage_size": 40,
+   "n_not_yet_done": 0,
+   "keys_outside_stage": 0,
+   "line_count_identity": true,
+   "bak_files": [],
+   "one_tensor": {
+    "shard": "acts_0000.pt",
+    "key": "f831ddec81ef461091ba5fc6d4987092|2|original",
+    "shape": [
+     7,
+     25,
+     2880
+    ],
+    "dtype": "torch.float16",
+    "position_order": [
+     "instruction_end",
+     "transcript_end",
+     "action_end",
+     "prompt_end",
+     "analysis_end",
+     "reasoning_end",
+     "pre_score"
+    ],
+    "row_finite": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "row_norm_last_layer": [
+     22165.6953125,
+     17273.1328125,
+     13108.4970703125,
+     24459.22265625,
+     26881.978515625,
+     19447.970703125,
+     21743.720703125
+    ]
+   },
+   "raw_copies": [
+    {
+     "path": "results/raw/local-monitor-activations/g4_low_cached_scores_20260910T203159Z_part1.jsonl",
+     "lines": 40,
+     "bytes": 384787,
+     "sha256": "2e28f9393236dcbda9e93017576293b34da61a7df5803502274d9e989b2b76f6"
+    }
+   ],
+   "pass": true
+  }
+ },
+ "all_pass": true
+}

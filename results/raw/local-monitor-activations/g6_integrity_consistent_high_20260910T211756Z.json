@@ -1,0 +1,228 @@
+{
+ "slug": "local-monitor-activations",
+ "script": "experiments/local-monitor-activations/g6_integrity.py",
+ "timestamp": "20260910T211756Z",
+ "git_commit": "fc40b848aa399ba28f5777ae9f9f1d515c06d800",
+ "run_order_sha256": "df4452987821ed71be2c963545e37ade63fe04f53972259d6326c2bab3875497",
+ "stages": {
+  "consistent_high": {
+   "stage": "consistent_high",
+   "dir": "checkpoints/local-monitor-activations/out/consistent_high",
+   "exists": true,
+   "n_files": 8,
+   "manifest": {
+    "acts_0000.pt": {
+     "bytes": 25209651,
+     "sha256": "bf511662c69a08fff875c061ae58a1f76c2fb7c18dd2128a4ee54fb37247e1fa"
+    },
+    "acts_0001.pt": {
+     "bytes": 25209651,
+     "sha256": "e252ca21c1fa6383d96a1a1445ec3d29e96cc3595daf800b13d8a0a1fe62e1c8"
+    },
+    "acts_0002.pt": {
+     "bytes": 25209651,
+     "sha256": "694664584337e9c99ad936afd88de258fa383f3271a2fed73e9cf7fb4805f3e0"
+    },
+    "acts_0003.pt": {
+     "bytes": 25209651,
+     "sha256": "4a432640fa35fff1b674c3f9ca687edf60d072e873b47cde22b6a382244930ab"
+    },
+    "acts_0004.pt": {
+     "bytes": 5043408,
+     "sha256": "7a2608ad1380064027e826196857402e389d6cf585aabc0231f45b0676388972"
+    },
+    "acts_index.json": {
+     "bytes": 5314,
+     "sha256": "81c37cde356a27061c9c6a74f00246a417ed527f3156f062f27529b55472ea8a"
+    },
+    "run_meta.json": {
+     "bytes": 3834,
+     "sha256": "fe4ca6118ca8b54c30aa0f516d75d9406de7b6c712f00a0fa048a4c7ee788383"
+    },
+    "scores.jsonl": {
+     "bytes": 1172425,
+     "sha256": "e1758c3d7f6819e1e811ed7871cc4e82e5c3c43cf69317801f91119ff8ede478"
+    }
+   },
+   "scores_lines": 105,
+   "unique_keys": 105,
+   "duplicate_keys": 0,
+   "by_status": {
+    "ok": 105
+   },
+   "n_shards": 5,
+   "shards": {
+    "acts_0000.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0001.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0002.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0003.pt": {
+     "loads": true,
+     "n": 25,
+     "index_n": 25,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    },
+    "acts_0004.pt": {
+     "loads": true,
+     "n": 5,
+     "index_n": 5,
+     "keys_match_index": true,
+     "meta_position_order": [
+      "instruction_end",
+      "transcript_end",
+      "action_end",
+      "prompt_end",
+      "analysis_end",
+      "reasoning_end",
+      "pre_score"
+     ],
+     "shape": [
+      7,
+      25,
+      2880
+     ],
+     "dtype": "torch.float16"
+    }
+   },
+   "all_shards_load": true,
+   "shard_keys_eq_ok_keys": true,
+   "n_shard_keys": 105,
+   "n_ok_keys": 105,
+   "index_position_order": [
+    "instruction_end",
+    "transcript_end",
+    "action_end",
+    "prompt_end",
+    "analysis_end",
+    "reasoning_end",
+    "pre_score"
+   ],
+   "stage_size": 105,
+   "n_not_yet_done": 0,
+   "keys_outside_stage": 0,
+   "line_count_identity": true,
+   "bak_files": [],
+   "one_tensor": {
+    "shard": "acts_0000.pt",
+    "key": "ea3bdc9307d84333b34f2c9561d847c6|5|original",
+    "shape": [
+     7,
+     25,
+     2880
+    ],
+    "dtype": "torch.float16",
+    "position_order": [
+     "instruction_end",
+     "transcript_end",
+     "action_end",
+     "prompt_end",
+     "analysis_end",
+     "reasoning_end",
+     "pre_score"
+    ],
+    "row_finite": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "row_norm_last_layer": [
+     22168.07421875,
+     23136.65234375,
+     13217.064453125,
+     24326.447265625,
+     26328.31640625,
+     23272.052734375,
+     22054.95703125
+    ]
+   },
+   "raw_copies": [
+    {
+     "path": "results/raw/local-monitor-activations/g4_consistent_high_scores_20260910T211756Z_part1.jsonl",
+     "lines": 105,
+     "bytes": 1172425,
+     "sha256": "e1758c3d7f6819e1e811ed7871cc4e82e5c3c43cf69317801f91119ff8ede478"
+    }
+   ],
+   "pass": true
+  }
+ },
+ "all_pass": true
+}

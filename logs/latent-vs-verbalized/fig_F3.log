@@ -1,0 +1,16 @@
+label-supervised probe   transcript_end   layer 13 cfg label|logreg|0.1         OOF AUROC 0.602  fold range [0.550, 0.816]
+label-supervised probe   action_end       layer  8 cfg label|logreg|0.1         OOF AUROC 0.926  fold range [0.865, 1.000]
+label-supervised probe   instruction_end  layer 19 cfg label|logreg|0.1         OOF AUROC 0.783  fold range [0.705, 0.966]
+label-supervised probe   prompt_end       layer  4 cfg label|logreg|0.01        OOF AUROC 0.694  fold range [0.357, 0.864]
+label-supervised probe   analysis_end     layer  4 cfg label|logreg|0.1         OOF AUROC 0.838  fold range [0.888, 1.000]
+label-supervised probe   reasoning_end    layer  7 cfg label|logreg|0.1         OOF AUROC 0.897  fold range [0.887, 0.990]
+label-supervised probe   pre_score        layer 11 cfg label|logreg|0.01        OOF AUROC 0.838  fold range [0.786, 0.995]
+score-supervised probe   transcript_end   layer 20 cfg score|ridge_E|10000.0    OOF AUROC 0.759  fold range [0.724, 0.913]
+score-supervised probe   action_end       layer 18 cfg score|ridge_E|1000.0     OOF AUROC 0.931  fold range [0.891, 1.000]
+score-supervised probe   instruction_end  layer 19 cfg score|ridge_E|1000.0     OOF AUROC 0.901  fold range [0.750, 1.000]
+score-supervised probe   prompt_end       layer 23 cfg score|ridge_E|100.0      OOF AUROC 0.856  fold range [0.713, 0.966]
+score-supervised probe   analysis_end     layer 24 cfg score|ridge_E|10000.0    OOF AUROC 0.932  fold range [0.900, 1.000]
+score-supervised probe   reasoning_end    layer 14 cfg score|ridge_E|1000.0     OOF AUROC 0.932  fold range [0.871, 1.000]
+score-supervised probe   pre_score        layer 11 cfg score|ridge_E|1000.0     OOF AUROC 0.928  fold range [0.847, 1.000]
+E train-OOF population AUROC 0.891 (n_pos 33, n_neg 599)
+saved results/figures/latent-vs-verbalized/summary/F3_where_signal_sits.png + .svg

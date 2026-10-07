@@ -1,0 +1,5 @@
+pool 808 actions / 31 trajs, sha fcba64628d8c; drew 60 with seed 0
+files -> experiments/action-level-attack-label/a4_audit/00.md … 59.md + INDEX.md
+raw   -> results/raw/action-level-attack-label/a4_draw_20260911T074044Z.json  (47 KB)
+distinct trajs in draw: 24 | tools: {'bash': 24, 'text_editor': 36}
+longest action: 5611 chars

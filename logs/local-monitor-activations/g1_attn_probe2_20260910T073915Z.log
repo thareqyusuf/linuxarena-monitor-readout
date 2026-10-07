@@ -1,0 +1,165 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 42 files:   0%|          | 0/42 [00:00<?, ?it/s]Fetching 42 files: 100%|██████████| 42/42 [00:00<00:00, 1602.60it/s]
+Loading weights:   0%|          | 0/411 [00:00<?, ?it/s]Loading weights:   0%|          | 1/411 [00:04<29:18,  4.29s/it]Loading weights:   2%|▏         | 7/411 [00:04<03:41,  1.83it/s]Loading weights:   4%|▍         | 16/411 [00:05<01:17,  5.09it/s]Loading weights:   5%|▌         | 21/411 [00:05<00:59,  6.55it/s]Loading weights:   6%|▌         | 24/411 [00:05<01:01,  6.32it/s]Loading weights:   8%|▊         | 33/411 [00:06<00:32, 11.48it/s]Loading weights:   9%|▉         | 39/411 [00:06<00:28, 13.15it/s]Loading weights:  10%|█         | 43/411 [00:07<00:34, 10.65it/s]Loading weights:  12%|█▏        | 50/411 [00:07<00:24, 14.94it/s]Loading weights:  13%|█▎        | 55/411 [00:07<00:23, 15.27it/s]Loading weights:  14%|█▍        | 58/411 [00:07<00:30, 11.56it/s]Loading weights:  16%|█▋        | 67/411 [00:08<00:18, 18.31it/s]Loading weights:  18%|█▊        | 73/411 [00:08<00:17, 18.92it/s]Loading weights:  18%|█▊        | 76/411 [00:08<00:26, 12.87it/s]Loading weights:  20%|██        | 84/411 [00:09<00:17, 18.28it/s]Loading weights:  22%|██▏       | 90/411 [00:09<00:16, 20.00it/s]Loading weights:  23%|██▎       | 93/411 [00:09<00:22, 13.88it/s]Loading weights:  25%|██▍       | 101/411 [00:10<00:15, 20.43it/s]Loading weights:  26%|██▌       | 107/411 [00:10<00:22, 13.77it/s]Loading weights:  28%|██▊       | 116/411 [00:10<00:14, 19.81it/s]Loading weights:  30%|██▉       | 123/411 [00:11<00:13, 20.74it/s]Loading weights:  31%|███       | 127/411 [00:11<00:18, 15.37it/s]Loading weights:  33%|███▎      | 134/411 [00:11<00:13, 20.41it/s]Loading weights:  34%|███▍      | 141/411 [00:12<00:12, 22.46it/s]Loading weights:  35%|███▌      | 145/411 [00:12<00:18, 14.62it/s]Loading weights:  37%|███▋      | 152/411 [00:12<00:13, 19.39it/s]Loading weights:  38%|███▊      | 157/411 [00:13<00:13, 19.19it/s]Loading weights:  39%|███▉      | 160/411 [00:13<00:18, 13.35it/s]Loading weights:  41%|████      | 169/411 [00:13<00:11, 20.38it/s]Loading weights:  43%|████▎     | 175/411 [00:14<00:16, 14.38it/s]Loading weights:  45%|████▍     | 183/411 [00:14<00:11, 20.06it/s]Loading weights:  47%|████▋     | 192/411 [00:14<00:09, 22.95it/s]Loading weights:  48%|████▊     | 196/411 [00:15<00:12, 17.91it/s]Loading weights:  49%|████▉     | 203/411 [00:15<00:09, 22.99it/s]Loading weights:  51%|█████     | 209/411 [00:15<00:09, 21.90it/s]Loading weights:  52%|█████▏    | 213/411 [00:16<00:11, 17.57it/s]Loading weights:  53%|█████▎    | 219/411 [00:16<00:08, 22.07it/s]Loading weights:  55%|█████▍    | 224/411 [00:16<00:08, 21.08it/s]Loading weights:  55%|█████▌    | 228/411 [00:17<00:12, 14.98it/s]Loading weights:  58%|█████▊    | 237/411 [00:17<00:07, 22.86it/s]Loading weights:  59%|█████▉    | 242/411 [00:17<00:07, 21.30it/s]Loading weights:  60%|█████▉    | 246/411 [00:17<00:10, 16.39it/s]Loading weights:  62%|██████▏   | 254/411 [00:18<00:06, 23.07it/s]Loading weights:  63%|██████▎   | 259/411 [00:18<00:06, 22.48it/s]Loading weights:  64%|██████▍   | 263/411 [00:18<00:08, 17.25it/s]Loading weights:  66%|██████▌   | 271/411 [00:18<00:05, 24.77it/s]Loading weights:  67%|██████▋   | 277/411 [00:19<00:09, 14.76it/s]Loading weights:  70%|██████▉   | 286/411 [00:19<00:05, 21.30it/s]Loading weights:  71%|███████   | 291/411 [00:19<00:05, 23.51it/s]Loading weights:  72%|███████▏  | 296/411 [00:20<00:07, 15.05it/s]Loading weights:  74%|███████▍  | 305/411 [00:20<00:04, 22.17it/s]Loading weights:  75%|███████▌  | 310/411 [00:21<00:04, 20.38it/s]Loading weights:  76%|███████▋  | 314/411 [00:21<00:05, 17.75it/s]Loading weights:  78%|███████▊  | 322/411 [00:21<00:03, 24.66it/s]Loading weights:  80%|███████▉  | 327/411 [00:21<00:03, 24.03it/s]Loading weights:  81%|████████  | 331/411 [00:22<00:05, 15.62it/s]Loading weights:  82%|████████▏ | 339/411 [00:22<00:03, 21.99it/s]Loading weights:  84%|████████▍ | 345/411 [00:23<00:04, 14.77it/s]Loading weights:  86%|████████▌ | 352/411 [00:23<00:03, 19.38it/s]Loading weights:  88%|████████▊ | 361/411 [00:23<00:02, 21.75it/s]Loading weights:  89%|████████▉ | 365/411 [00:24<00:02, 16.29it/s]Loading weights:  91%|█████████ | 373/411 [00:24<00:01, 21.62it/s]Loading weights:  92%|█████████▏| 378/411 [00:24<00:01, 20.33it/s]Loading weights:  93%|█████████▎| 381/411 [00:25<00:02, 13.92it/s]Loading weights:  95%|█████████▍| 389/411 [00:25<00:01, 20.03it/s]Loading weights:  96%|█████████▋| 396/411 [00:25<00:00, 21.49it/s]Loading weights:  97%|█████████▋| 400/411 [00:25<00:00, 16.28it/s]Loading weights:  98%|█████████▊| 403/411 [00:26<00:00, 17.35it/s]Loading weights: 100%|██████████| 411/411 [00:26<00:00, 15.75it/s]
+chat79 {
+ "eager_1": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": null
+ },
+ "eager_2": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": null,
+  "vs_eager_1": {
+   "max": 0.0,
+   "mean": 0.0,
+   "p99": 0.0,
+   "last_pos_max": 0.0,
+   "argmax_agreement": 1.0,
+   "n_positions_with_maxdiff_gt_1": 0,
+   "n_positions": 79
+  }
+ },
+ "chunked_single_1": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": 79,
+  "vs_eager_1": {
+   "max": 4.9375,
+   "mean": 0.16694,
+   "p99": 1.2031,
+   "last_pos_max": 0.9375,
+   "argmax_agreement": 0.9747,
+   "n_positions_with_maxdiff_gt_1": 26,
+   "n_positions": 79
+  }
+ },
+ "chunked_single_2": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": 79,
+  "vs_eager_1": {
+   "max": 4.9375,
+   "mean": 0.16694,
+   "p99": 1.2031,
+   "last_pos_max": 0.9375,
+   "argmax_agreement": 0.9747,
+   "n_positions_with_maxdiff_gt_1": 26,
+   "n_positions": 79
+  }
+ },
+ "chunked_multi": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": 79,
+  "vs_eager_1": {
+   "max": 4.9375,
+   "mean": 0.16694,
+   "p99": 1.2031,
+   "last_pos_max": 0.9375,
+   "argmax_agreement": 0.9747,
+   "n_positions_with_maxdiff_gt_1": 26,
+   "n_positions": 79
+  },
+  "vs_chunked_single_1": {
+   "max": 0.0,
+   "mean": 0.0,
+   "p99": 0.0,
+   "last_pos_max": 0.0,
+   "argmax_agreement": 1.0,
+   "n_positions_with_maxdiff_gt_1": 0,
+   "n_positions": 79
+  }
+ },
+ "flex_fwd32_64": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": null,
+  "vs_eager_1": {
+   "max": 8.4648,
+   "mean": 0.25863,
+   "p99": 1.9688,
+   "last_pos_max": 3.25,
+   "argmax_agreement": 0.9241,
+   "n_positions_with_maxdiff_gt_1": 38,
+   "n_positions": 79
+  }
+ }
+}
+rand2048 {
+ "eager_1": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": null
+ },
+ "eager_2": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": null,
+  "vs_eager_1": {
+   "max": 0.0,
+   "mean": 0.0,
+   "p99": 0.0,
+   "last_pos_max": 0.0,
+   "argmax_agreement": 1.0,
+   "n_positions_with_maxdiff_gt_1": 0,
+   "n_positions": 2048
+  }
+ },
+ "chunked_single_1": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": 2048,
+  "vs_eager_1": {
+   "max": 1.4824,
+   "mean": 0.01472,
+   "p99": 0.1094,
+   "last_pos_max": 0.0547,
+   "argmax_agreement": 0.9927,
+   "n_positions_with_maxdiff_gt_1": 2,
+   "n_positions": 2048
+  }
+ },
+ "chunked_single_2": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": 2048,
+  "vs_eager_1": {
+   "max": 1.4824,
+   "mean": 0.01472,
+   "p99": 0.1094,
+   "last_pos_max": 0.0547,
+   "argmax_agreement": 0.9927,
+   "n_positions_with_maxdiff_gt_1": 2,
+   "n_positions": 2048
+  }
+ },
+ "chunked_multi": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": 16,
+  "vs_eager_1": {
+   "max": 1.4688,
+   "mean": 0.01459,
+   "p99": 0.1094,
+   "last_pos_max": 0.0469,
+   "argmax_agreement": 0.9951,
+   "n_positions_with_maxdiff_gt_1": 1,
+   "n_positions": 2048
+  },
+  "vs_chunked_single_1": {
+   "max": 1.4902,
+   "mean": 0.01256,
+   "p99": 0.1017,
+   "last_pos_max": 0.0625,
+   "argmax_agreement": 0.9946,
+   "n_positions_with_maxdiff_gt_1": 2,
+   "n_positions": 2048
+  }
+ },
+ "flex_fwd32_64": {
+  "ok": true,
+  "chunk_tokens_at_full_layer": null,
+  "vs_eager_1": {
+   "max": 1.4062,
+   "mean": 0.01597,
+   "p99": 0.1094,
+   "last_pos_max": 0.0625,
+   "argmax_agreement": 0.9912,
+   "n_positions_with_maxdiff_gt_1": 1,
+   "n_positions": 2048
+  }
+ }
+}
+chunked prefill (expandable_segments) L=131072: {'seconds': 512.9, 'peak_gib': 28.04, 'reserved_gib': 28.83, 'logits_finite': True}
+raw -> results/raw/local-monitor-activations/g1_attn_probe2_20260910T074025Z.json

@@ -1,0 +1,13 @@
+# RESULTS — index
+
+One row per experiment. Each experiment has its own `experiments/<slug>/RESULTS.md`
+(newest entry at the top; every number there cites its script, raw file and a
+recompute command). Status reflects the "Verification" section of that file,
+an independent recompute from code and raw outputs only.
+
+| slug | question | status | headline | details |
+|---|---|---|---|---|
+| `logit-curve-replication` | Can the paper's GPT-5 Nano monitor ROC (LinuxArena §5.3) be rebuilt from the public mirror's cached per-action scores, and is it logit-linear? | verified (L1–L4) | Honest pool (12,494) and attack maxima (92) identical to the paper's `data.json`; TPR 0.560 [0.461, 0.654] at FPR 1e-2; logit–logit slope 0.881, R² 0.985. Prompt formatter byte-identical to control-tower on all 17,234 actions. | [RESULTS](experiments/logit-curve-replication/RESULTS.md) · [REPORT](experiments/logit-curve-replication/REPORT.md) |
+| `local-monitor-activations` | Engineering track: run gpt-oss-20b as the live monitor on a 2,012-action subset and capture residuals at 7 positions; does the score survive neutralising the evidence? | verified (G1–G4; G1 and two G4.3 rows weaker than stated) | Main pass 1,812/1,812 ok. Integer score does not move under neutralisation beyond an event-matched scrub control (mean Δ +0.01 vs −0.04); the forced digit readout E does (orig ≥ 3: −0.43, p = 2.6e-4, vs +0.02). One clean evidence-removal case, 8 → 2. | [RESULTS](experiments/local-monitor-activations/RESULTS.md) |
+| `action-level-attack-label` | Build a monitor-independent per-action label for the payload actions of attack trajectories, then compare cached vs local monitors on it. | verified (A1–A3; A3 weaker: 28/30 not 29/30) · tested (A4–E) | 160 level-2 payload actions of 17,234. Trajectory-level AUROC cached 0.917 vs local E 0.917 with overlapping CIs. E recovers 15 of the 31 payloads the integer scores ≤ 1 at 5 % FPR. The 20B-vs-120B comparison was retracted. | [RESULTS](experiments/action-level-attack-label/RESULTS.md) |
+| `latent-vs-verbalized` | Does a linear probe on the residual stream rank the payloads the verbalised integer misses better than the forced digit distribution E? | verified (P11; P12 weaker for one of two actions) · tested (P0–P10) · **not merged on the original repo** | No. E AUROC 0.90 vs integer 0.74 (743-honest pool), TPR@5 % 0.55 vs 0.42. The score probe reaches 0.94 pooled but ties E on the 31 nulled payloads (11 vs 11); the label probe collapses under leave-one-category-out (0.75). The readout rises at the sentence that names the covert objective (n = 1 clean, 1 consistent). | [RESULTS](experiments/latent-vs-verbalized/RESULTS.md) · [figures](results/figures/latent-vs-verbalized/summary/) |

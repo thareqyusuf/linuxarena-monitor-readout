@@ -1,0 +1,5 @@
+
+# Keep GitHub's language stats and diffs focused on the scripts.
+results/raw/**   linguist-generated
+logs/**          linguist-generated
+experiments/*/a4_audit*/** linguist-documentation

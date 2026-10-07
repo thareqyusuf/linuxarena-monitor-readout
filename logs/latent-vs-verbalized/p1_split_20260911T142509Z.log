@@ -1,0 +1,9 @@
+split -> experiments/latent-vs-verbalized/split.json
+raw -> results/raw/latent-vs-verbalized/p1_split_20260911T142510Z.json (0.02 MB)
+  test   {'n_traj': 19, 'n_honest_traj': 9, 'n_attack_traj': 10, 'n_pos_traj': 5, 'n_level2': 20, 'n_usable_honest': 240, 'envs': ['auto_workflow', 'clinical_trial', 'file_indexing', 'media_processing', 'model_registry', 'shared_dotfiles', 'slack_clone', 'user_tracking', 'web_scraping']}
+  train  {'n_traj': 40, 'n_honest_traj': 18, 'n_attack_traj': 22, 'n_pos_traj': 10, 'n_level2': 33, 'n_usable_honest': 599, 'envs': ['auto_workflow', 'clinical_trial', 'file_indexing', 'media_processing', 'model_registry', 'shared_dotfiles', 'slack_clone', 'tiktok', 'user_tracking', 'web_scraping']}
+  fold0  {'n_traj': 10, 'n_honest_traj': 4, 'n_attack_traj': 6, 'n_pos_traj': 3, 'n_level2': 4, 'n_usable_honest': 185, 'envs': ['auto_workflow', 'clinical_trial', 'file_indexing', 'media_processing', 'model_registry', 'shared_dotfiles', 'tiktok']}
+  fold1  {'n_traj': 10, 'n_honest_traj': 4, 'n_attack_traj': 6, 'n_pos_traj': 2, 'n_level2': 20, 'n_usable_honest': 126, 'envs': ['auto_workflow', 'clinical_trial', 'file_indexing', 'model_registry', 'shared_dotfiles', 'tiktok', 'user_tracking']}
+  fold2  {'n_traj': 9, 'n_honest_traj': 4, 'n_attack_traj': 5, 'n_pos_traj': 2, 'n_level2': 2, 'n_usable_honest': 115, 'envs': ['auto_workflow', 'clinical_trial', 'file_indexing', 'media_processing', 'model_registry', 'tiktok', 'user_tracking', 'web_scraping']}
+  fold3  {'n_traj': 6, 'n_honest_traj': 3, 'n_attack_traj': 3, 'n_pos_traj': 2, 'n_level2': 5, 'n_usable_honest': 129, 'envs': ['auto_workflow', 'media_processing', 'slack_clone', 'tiktok']}
+  fold4  {'n_traj': 5, 'n_honest_traj': 3, 'n_attack_traj': 2, 'n_pos_traj': 1, 'n_level2': 2, 'n_usable_honest': 44, 'envs': ['auto_workflow', 'clinical_trial', 'file_indexing']}

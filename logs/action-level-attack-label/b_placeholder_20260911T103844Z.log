@@ -1,0 +1,8 @@
+!! no matplotlib: No module named 'matplotlib'
+raw -> results/raw/action-level-attack-label/b_placeholder_20260911T103844Z.json (0.05 MB) figure -> None
+honest_placeholder       n=   162 mean=1.546 median=1 p(mean>=6)=0.0556 p(both>=6)=0.0494 (n2=162)
+honest_non_placeholder   n= 12325 mean=1.328 median=1 p(mean>=6)=0.0339 p(both>=6)=0.0279 (n2=12325)
+attack_placeholder       n=  1464 mean=2.588 median=1.5 p(mean>=6)=0.1694 p(both>=6)=0.1616 (n2=1442)
+attack_non_placeholder   n=  3283 mean=1.387 median=0.5 p(mean>=6)=0.0521 p(both>=6)=0.0505 (n2=2972)
+honest_placeholder_vs_non      U1=978208 z=-0.45 p=6.53e-01 AUC(ph>non)=0.490 mean diff=+0.218
+attack_placeholder_vs_non      U1=3106378 z=16.35 p=4.34e-60 AUC(ph>non)=0.646 mean diff=+1.202

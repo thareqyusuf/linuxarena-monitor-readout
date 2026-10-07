@@ -1,0 +1,83 @@
+[cf_neutralized] one tensor 30e71655380946e2aae7b6d871da790d|2|neutralized from acts_0000.pt: shape [7, 25, 2880] torch.float16 position order ['instruction_end', 'transcript_end', 'action_end', 'prompt_end', 'analysis_end', 'reasoning_end', 'pre_score'] finite rows [True, True, True, True, True, True, True]
+[cf_random_scrub] one tensor 30e71655380946e2aae7b6d871da790d|2|random_scrub from acts_0000.pt: shape [7, 25, 2880] torch.float16 position order ['instruction_end', 'transcript_end', 'action_end', 'prompt_end', 'analysis_end', 'reasoning_end', 'pre_score'] finite rows [True, True, True, True, True, True, True]
+{
+ "stage": "cf_neutralized",
+ "dir": "checkpoints/local-monitor-activations/out/cf_neutralized",
+ "exists": true,
+ "n_files": 13,
+ "scores_lines": 250,
+ "unique_keys": 250,
+ "duplicate_keys": 0,
+ "by_status": {
+  "ok": 250
+ },
+ "n_shards": 10,
+ "all_shards_load": true,
+ "shard_keys_eq_ok_keys": true,
+ "n_shard_keys": 250,
+ "n_ok_keys": 250,
+ "index_position_order": [
+  "instruction_end",
+  "transcript_end",
+  "action_end",
+  "prompt_end",
+  "analysis_end",
+  "reasoning_end",
+  "pre_score"
+ ],
+ "stage_size": 250,
+ "n_not_yet_done": 0,
+ "keys_outside_stage": 0,
+ "line_count_identity": true,
+ "bak_files": [],
+ "raw_copies": [
+  {
+   "path": "results/raw/local-monitor-activations/g4_cf_neutralized_scores_20260911T124606Z_part1.jsonl",
+   "lines": 250,
+   "bytes": 2623551,
+   "sha256": "2f845f12898cf3ef87682d135ea7e4266a6973a3ac8e9c60241213a2d6e6f467"
+  }
+ ],
+ "pass": true
+}
+{
+ "stage": "cf_random_scrub",
+ "dir": "checkpoints/local-monitor-activations/out/cf_random_scrub",
+ "exists": true,
+ "n_files": 13,
+ "scores_lines": 250,
+ "unique_keys": 250,
+ "duplicate_keys": 0,
+ "by_status": {
+  "ok": 250
+ },
+ "n_shards": 10,
+ "all_shards_load": true,
+ "shard_keys_eq_ok_keys": true,
+ "n_shard_keys": 250,
+ "n_ok_keys": 250,
+ "index_position_order": [
+  "instruction_end",
+  "transcript_end",
+  "action_end",
+  "prompt_end",
+  "analysis_end",
+  "reasoning_end",
+  "pre_score"
+ ],
+ "stage_size": 250,
+ "n_not_yet_done": 0,
+ "keys_outside_stage": 0,
+ "line_count_identity": true,
+ "bak_files": [],
+ "raw_copies": [
+  {
+   "path": "results/raw/local-monitor-activations/g4_cf_random_scrub_scores_20260911T124606Z_part1.jsonl",
+   "lines": 250,
+   "bytes": 2624459,
+   "sha256": "1b0174289b1d125d64fe4faf0928ffede4311414e16f65cfd359cde96d77eba1"
+  }
+ ],
+ "pass": true
+}
+ALL PASS: True raw -> results/raw/local-monitor-activations/g6_integrity_counterfactual_20260911T124606Z.json

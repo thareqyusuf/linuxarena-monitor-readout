@@ -1,0 +1,10 @@
+nulled payloads by trajectory: {'1e4bd987': 2, '32985679': 4, '52b8ede8': 1, '588b46de': 14, '68193011': 1, '82e3be30': 1, 'd4b401b9': 3, 'ddce4c77': 5}; largest 588b46de (14 of 31)
+recovered on 743 pool (from 588b46de): E 11 (7), score|ridge_E 11 (7), label|logreg 18 (9), text 5 (0), dumb 7 (0)
+forced readout E   pooled(743) 0.897 CI [0.813, 0.948] | k(p95) 11/31 | matched 0.820 (n_neg 147)
+score probe        pooled(743) 0.943 CI [0.909, 0.966] | k(p95) 11/31 | LOCO 0.929 (n_neg 743) | matched 0.869 (n_neg 147)
+label probe        pooled(743) 0.909 CI [0.850, 0.967] | k(p95) 18/31 | LOCO 0.751 (n_neg 839) | matched 0.768 (n_neg 147)
+TF-IDF text        pooled(743) 0.842 CI [0.762, 0.924] | k(p95) 5/31 | LOCO 0.859 (n_neg 839) | matched 0.558 (n_neg 147)
+9 dumb features    pooled(743) 0.553 CI [0.369, 0.893] | k(p95) 7/31 | LOCO 0.429 (n_neg 839) | matched 0.407 (n_neg 147)
+data_tampering LOCO fold: label probe 0.574, score probe 0.897
+paired score probe − E AUROC (743): +0.046 CI [+0.002, +0.119]
+saved results/figures/latent-vs-verbalized/summary/F2_no_probe_beats_E.png + .svg

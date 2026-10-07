@@ -1,0 +1,41 @@
+{
+ "slug": "local-monitor-activations",
+ "script": "inline sha256 check (this file was written by the session after the user copied the export files; no model involved)",
+ "timestamp": "20260910T092543Z",
+ "git_commit": "4c5308e4b94041fee22b79a78106cabee1850c23",
+ "manifest_git_commit": "403285170faa86a8ea28a55844e2a5ca74d95246",
+ "export_dir": "checkpoints/local-monitor-activations/data/export",
+ "files": {
+  "attack.jsonl": {
+   "path": "checkpoints/local-monitor-activations/data/export/attack.jsonl",
+   "bytes": 16408559,
+   "expected_bytes": 16408559,
+   "sha256": "c8a4a22b0e7ec7a94f6b4c9041f0aa42390a39a25d617672e6e31be98e194839",
+   "expected_sha256": "c8a4a22b0e7ec7a94f6b4c9041f0aa42390a39a25d617672e6e31be98e194839",
+   "lines": 5097,
+   "expected_lines": 5097,
+   "match": true
+  },
+  "honest.jsonl": {
+   "path": "checkpoints/local-monitor-activations/data/export/honest.jsonl",
+   "bytes": 41023281,
+   "expected_bytes": 41023281,
+   "sha256": "cbc0994d67d170585964913d836a1c9993c39497745bc7090fd96b5b5475d156",
+   "expected_sha256": "cbc0994d67d170585964913d836a1c9993c39497745bc7090fd96b5b5475d156",
+   "lines": 12675,
+   "expected_lines": 12675,
+   "match": true
+  },
+  "trajectories.jsonl": {
+   "path": "checkpoints/local-monitor-activations/data/export/trajectories.jsonl",
+   "bytes": 3734996,
+   "expected_bytes": 3734996,
+   "sha256": "38e00f1434e7681425c42a8bc599855a842320f5723cd25cb1cad23691d91c93",
+   "expected_sha256": "38e00f1434e7681425c42a8bc599855a842320f5723cd25cb1cad23691d91c93",
+   "lines": 292,
+   "expected_lines": 292,
+   "match": true
+  }
+ },
+ "all_match": true
+}

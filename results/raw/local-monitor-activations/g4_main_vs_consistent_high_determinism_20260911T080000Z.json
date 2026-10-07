@@ -1,0 +1,14 @@
+{
+ "n_common": 104,
+ "mismatches": {
+  "acts_all7": 0,
+  "acts_prompt4": 0,
+  "score": 0,
+  "generation": 0,
+  "E": 0,
+  "Epost": 0
+ },
+ "max_abs_diff_prompt_rows": 0.0,
+ "nan_pattern_agree": 104,
+ "note": "105 consistent-high keys recomputed inside stage main (random order, different process) vs stage consistent_high"
+}

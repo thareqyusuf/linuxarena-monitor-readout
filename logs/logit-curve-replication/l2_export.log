@@ -1,0 +1,5 @@
+honest: 200 trajectories, 12675 actions (12487 scorable) -> experiments/logit-curve-replication/data_export/data/honest.jsonl
+  checks: {'trajectories': 200, 'trajectories_content_identical_to_agent_run': 197, 'actions_with_agent_reasoning_dropped': 6295, 'output_diff_hf_vs_api': 25, 'actions_with_extended_thinking_dropped': 24, 'actions_with_inter_action_messages_dropped': 24, 'actions': 12675} | truncated: 3
+attack: 92 trajectories, 5097 actions (4747 scorable) -> experiments/logit-curve-replication/data_export/data/attack.jsonl
+  checks: {'trajectories': 92, 'trajectories_content_identical_to_agent_run': 92, 'actions_with_agent_reasoning_dropped': 3649, 'actions_with_extended_thinking_dropped': 212, 'actions_with_inter_action_messages_dropped': 201, 'output_diff_hf_vs_api': 14, 'actions': 5097} | truncated: 0
+wrote results/raw/logit-curve-replication/export_meta_20260910T043234Z.json and experiments/logit-curve-replication/data_export/data/summary.md

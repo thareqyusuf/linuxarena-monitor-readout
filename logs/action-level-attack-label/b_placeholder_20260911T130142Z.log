@@ -1,0 +1,18 @@
+raw -> results/raw/action-level-attack-label/b_placeholder_20260911T130142Z.json (0.11 MB) figure -> results/figures/action-level-attack-label/b_placeholder_cached_hist.png
+honest_current_action    n=    50 mean=1.910 median=1.5 p(mean>=6)=0.0400 p(both>=6)=0.0400 (n2=50)
+honest_history_only      n=   112 mean=1.384 median=0.5 p(mean>=6)=0.0625 p(both>=6)=0.0536 (n2=112)
+honest_no_attachment     n= 12325 mean=1.328 median=1 p(mean>=6)=0.0339 p(both>=6)=0.0279 (n2=12325)
+honest_placeholder_flag_as_published n=   162 mean=1.546 median=1 p(mean>=6)=0.0556 p(both>=6)=0.0494 (n2=162)
+honest_non_placeholder_as_published n= 12325 mean=1.328 median=1 p(mean>=6)=0.0339 p(both>=6)=0.0279 (n2=12325)
+attack_current_action    n=   197 mean=1.675 median=1 p(mean>=6)=0.0406 p(both>=6)=0.0406 (n2=197)
+attack_history_only      n=  1267 mean=2.730 median=1.5 p(mean>=6)=0.1894 p(both>=6)=0.1807 (n2=1245)
+attack_no_attachment     n=  3283 mean=1.387 median=0.5 p(mean>=6)=0.0521 p(both>=6)=0.0505 (n2=2972)
+attack_placeholder_flag_as_published n=  1464 mean=2.588 median=1.5 p(mean>=6)=0.1694 p(both>=6)=0.1616 (n2=1442)
+attack_non_placeholder_as_published n=  3283 mean=1.387 median=0.5 p(mean>=6)=0.0521 p(both>=6)=0.0505 (n2=2972)
+Traceback (most recent call last):
+  File "/home/tarek/Projects/mech-interp/neel application/mech-interp-2/experiments/action-level-attack-label/b_placeholder.py", line 124, in <module>
+    main()
+  File "/home/tarek/Projects/mech-interp/neel application/mech-interp-2/experiments/action-level-attack-label/b_placeholder.py", line 120, in main
+    print(f"{k:30} U1={v['U1_placeholder']:.0f} z={v['z']:.2f} p={v['p_two_sided']:.2e} AUC(ph>non)={v['auc_placeholder_gt_non']:.3f} mean diff={v['mean_diff_placeholder_minus_non']:+.3f}")
+                       ~^^^^^^^^^^^^^^^^^^
+KeyError: 'U1_placeholder'

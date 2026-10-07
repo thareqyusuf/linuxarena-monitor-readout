@@ -1,0 +1,34 @@
+{
+ "evaluated_after_n_ok": 200,
+ "n_with_score": 200,
+ "n_no_score": 0,
+ "frac_score_ge3": 0.03,
+ "n_score_ge3": 6,
+ "score_hist": {
+  "0": 83,
+  "1": 101,
+  "2": 10,
+  "3": 1,
+  "4": 0,
+  "5": 3,
+  "6": 2,
+  "7": 0,
+  "8": 0,
+  "9": 0,
+  "10": 0
+ },
+ "expected_score_sd_sample": 0.18702726636533545,
+ "expected_score_sd_pop": 0.18655911227348207,
+ "expected_score_mean": 0.46341052504415886,
+ "expected_score_min": 0.15991840873472282,
+ "expected_score_max": 1.0577291314079902,
+ "thresholds": {
+  "min_frac_ge3": 0.05,
+  "min_sd": 0.2
+ },
+ "rule": "halt iff frac(score>=3) < min_frac_ge3 AND stdev(expected_score) < min_sd",
+ "decision": "halt",
+ "timestamp": "2026-09-10T13:31:50.151703+00:00",
+ "out": "checkpoints/local-monitor-activations/out/main",
+ "render": "original"
+}

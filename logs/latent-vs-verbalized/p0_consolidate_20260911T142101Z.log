@@ -1,0 +1,194 @@
+  consistent_high/acts_0000.pt: 1 rows  (1/82 shards, 1s)
+  main/acts_0000.pt: 25 rows  (2/82 shards, 1s)
+  main/acts_0001.pt: 25 rows  (3/82 shards, 1s)
+  main/acts_0002.pt: 25 rows  (4/82 shards, 2s)
+  main/acts_0003.pt: 25 rows  (5/82 shards, 2s)
+  main/acts_0004.pt: 25 rows  (6/82 shards, 2s)
+  main/acts_0005.pt: 25 rows  (7/82 shards, 3s)
+  main/acts_0006.pt: 25 rows  (8/82 shards, 3s)
+  main/acts_0007.pt: 25 rows  (9/82 shards, 4s)
+  main/acts_0008.pt: 25 rows  (10/82 shards, 4s)
+  main/acts_0009.pt: 25 rows  (11/82 shards, 4s)
+  main/acts_0010.pt: 25 rows  (12/82 shards, 5s)
+  main/acts_0011.pt: 25 rows  (13/82 shards, 6s)
+  main/acts_0012.pt: 25 rows  (14/82 shards, 6s)
+  main/acts_0013.pt: 25 rows  (15/82 shards, 6s)
+  main/acts_0014.pt: 25 rows  (16/82 shards, 7s)
+  main/acts_0015.pt: 25 rows  (17/82 shards, 7s)
+  main/acts_0016.pt: 25 rows  (18/82 shards, 8s)
+  main/acts_0017.pt: 25 rows  (19/82 shards, 8s)
+  main/acts_0018.pt: 25 rows  (20/82 shards, 8s)
+  main/acts_0019.pt: 25 rows  (21/82 shards, 9s)
+  main/acts_0020.pt: 25 rows  (22/82 shards, 9s)
+  main/acts_0021.pt: 25 rows  (23/82 shards, 9s)
+  main/acts_0022.pt: 25 rows  (24/82 shards, 10s)
+  main/acts_0023.pt: 25 rows  (25/82 shards, 10s)
+  main/acts_0024.pt: 25 rows  (26/82 shards, 11s)
+  main/acts_0025.pt: 25 rows  (27/82 shards, 11s)
+  main/acts_0026.pt: 25 rows  (28/82 shards, 11s)
+  main/acts_0027.pt: 25 rows  (29/82 shards, 12s)
+  main/acts_0028.pt: 25 rows  (30/82 shards, 12s)
+  main/acts_0029.pt: 25 rows  (31/82 shards, 12s)
+  main/acts_0030.pt: 25 rows  (32/82 shards, 13s)
+  main/acts_0031.pt: 25 rows  (33/82 shards, 13s)
+  main/acts_0032.pt: 25 rows  (34/82 shards, 13s)
+  main/acts_0033.pt: 25 rows  (35/82 shards, 14s)
+  main/acts_0034.pt: 25 rows  (36/82 shards, 14s)
+  main/acts_0035.pt: 25 rows  (37/82 shards, 15s)
+  main/acts_0036.pt: 25 rows  (38/82 shards, 15s)
+  main/acts_0037.pt: 25 rows  (39/82 shards, 15s)
+  main/acts_0038.pt: 25 rows  (40/82 shards, 16s)
+  main/acts_0039.pt: 25 rows  (41/82 shards, 16s)
+  main/acts_0040.pt: 25 rows  (42/82 shards, 16s)
+  main/acts_0041.pt: 25 rows  (43/82 shards, 16s)
+  main/acts_0042.pt: 25 rows  (44/82 shards, 17s)
+  main/acts_0043.pt: 25 rows  (45/82 shards, 17s)
+  main/acts_0044.pt: 25 rows  (46/82 shards, 17s)
+  main/acts_0045.pt: 25 rows  (47/82 shards, 18s)
+  main/acts_0046.pt: 25 rows  (48/82 shards, 18s)
+  main/acts_0047.pt: 25 rows  (49/82 shards, 18s)
+  main/acts_0048.pt: 25 rows  (50/82 shards, 19s)
+  main/acts_0049.pt: 25 rows  (51/82 shards, 19s)
+  main/acts_0050.pt: 25 rows  (52/82 shards, 19s)
+  main/acts_0051.pt: 25 rows  (53/82 shards, 20s)
+  main/acts_0052.pt: 25 rows  (54/82 shards, 20s)
+  main/acts_0053.pt: 25 rows  (55/82 shards, 20s)
+  main/acts_0054.pt: 25 rows  (56/82 shards, 20s)
+  main/acts_0055.pt: 25 rows  (57/82 shards, 21s)
+  main/acts_0056.pt: 25 rows  (58/82 shards, 21s)
+  main/acts_0057.pt: 25 rows  (59/82 shards, 22s)
+  main/acts_0058.pt: 25 rows  (60/82 shards, 22s)
+  main/acts_0059.pt: 25 rows  (61/82 shards, 22s)
+  main/acts_0060.pt: 25 rows  (62/82 shards, 23s)
+  main/acts_0061.pt: 25 rows  (63/82 shards, 23s)
+  main/acts_0062.pt: 25 rows  (64/82 shards, 23s)
+  main/acts_0063.pt: 25 rows  (65/82 shards, 24s)
+  main/acts_0064.pt: 25 rows  (66/82 shards, 24s)
+  main/acts_0065.pt: 25 rows  (67/82 shards, 24s)
+  main/acts_0066.pt: 25 rows  (68/82 shards, 24s)
+  main/acts_0067.pt: 25 rows  (69/82 shards, 25s)
+  main/acts_0068.pt: 25 rows  (70/82 shards, 25s)
+  main/acts_0069.pt: 25 rows  (71/82 shards, 25s)
+  main/acts_0070.pt: 25 rows  (72/82 shards, 25s)
+  main/acts_0071.pt: 25 rows  (73/82 shards, 26s)
+  main/acts_0072.pt: 12 rows  (74/82 shards, 26s)
+  main_pass1/acts_0000.pt: 25 rows  (75/82 shards, 26s)
+  main_pass1/acts_0001.pt: 25 rows  (76/82 shards, 26s)
+  main_pass1/acts_0002.pt: 25 rows  (77/82 shards, 27s)
+  main_pass1/acts_0003.pt: 25 rows  (78/82 shards, 27s)
+  main_pass1/acts_0004.pt: 25 rows  (79/82 shards, 27s)
+  main_pass1/acts_0005.pt: 25 rows  (80/82 shards, 28s)
+  main_pass1/acts_0006.pt: 24 rows  (81/82 shards, 28s)
+  main_pass1/acts_0007.pt: 25 rows  (82/82 shards, 28s)
+array written 2.03 GB in 28s; hashing...
+raw -> results/raw/latent-vs-verbalized/p0_consolidate_20260911T142132Z.json (0.01 MB)
+{
+ "n_rows": 2012,
+ "p1_dedup_count": 2012,
+ "count_ok": true,
+ "bitwise_5_random_rows": [
+  {
+   "row": 1729,
+   "key": [
+    "ddce4c7762d541f5908fc83efcbfb731",
+    22,
+    "original"
+   ],
+   "source": "main/acts_0004.pt",
+   "bitwise_equal": true
+  },
+  {
+   "row": 788,
+   "key": [
+    "52b8ede8fb14420086a42fede0a485c9",
+    0,
+    "original"
+   ],
+   "source": "main_pass1/acts_0000.pt",
+   "bitwise_equal": true
+  },
+  {
+   "row": 1552,
+   "key": [
+    "c48bd5e0a0d841849e06b031bef19e99",
+    1,
+    "original"
+   ],
+   "source": "main_pass1/acts_0004.pt",
+   "bitwise_equal": true
+  },
+  {
+   "row": 1823,
+   "key": [
+    "e5a6beed085746ddb2a4acba98faac43",
+    4,
+    "original"
+   ],
+   "source": "main/acts_0012.pt",
+   "bitwise_equal": true
+  },
+  {
+   "row": 861,
+   "key": [
+    "542ff99dbcbe48ee918cf92c1ae99c01",
+    16,
+    "original"
+   ],
+   "source": "main/acts_0021.pt",
+   "bitwise_equal": true
+  }
+ ],
+ "bitwise_ok": true,
+ "nan_pattern_ok": true,
+ "n_four_position_rows": 199,
+ "prompt_positions_finite_last_layer": true,
+ "rows_with_nan_generation_positions_despite_7": [
+  [
+   "00e38186882e4f7d9407f4b7dd6ec2f5",
+   43,
+   [
+    "reasoning_end",
+    "pre_score"
+   ]
+  ],
+  [
+   "00e38186882e4f7d9407f4b7dd6ec2f5",
+   51,
+   [
+    "reasoning_end",
+    "pre_score"
+   ]
+  ],
+  [
+   "00e38186882e4f7d9407f4b7dd6ec2f5",
+   54,
+   [
+    "reasoning_end",
+    "pre_score"
+   ]
+  ],
+  [
+   "00e38186882e4f7d9407f4b7dd6ec2f5",
+   56,
+   [
+    "reasoning_end",
+    "pre_score"
+   ]
+  ],
+  [
+   "f671eb58276e43c3973e6a0337273d8e",
+   31,
+   [
+    "reasoning_end",
+    "pre_score"
+   ]
+  ]
+ ],
+ "source_counts": {
+  "main_pass1": 199,
+  "main": 1812,
+  "consistent_high": 1
+ },
+ "all_ok": true
+}
+ALL_OK

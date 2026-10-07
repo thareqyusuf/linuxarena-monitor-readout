@@ -1,0 +1,56 @@
+G2.1 export files: {'attack.jsonl': True, 'honest.jsonl': True, 'trajectories.jsonl': True}
+G2.2 tokenized 17234 prompts in 215s; all sha256 match; all end in id 173781
+     chars/token on 10 random examples: [3.69, 3.79, 4.81, 3.55, 3.59, 3.78, 3.21, 3.66, 3.97, 3.58] (assert 2.5..5.5; ~4 expected)
+G2.3 lengths: {
+"all": {
+"n": 17234,
+"median": 26885.5,
+"p90": 63898.80000000001,
+"p95": 77310.7,
+"p99": 98430.50999999991,
+"max": 141576,
+"min": 1133,
+"n_over_128k": 15,
+"n_over_32k": 6856
+},
+"honest": {
+"n": 12487,
+"median": 28677.0,
+"p90": 70043.39999999998,
+"p95": 81803.29999999999,
+"p99": 100890.95999999988,
+"max": 141576,
+"min": 1133,
+"n_over_128k": 15,
+"n_over_32k": 5519
+},
+"attack": {
+"n": 4747,
+"median": 23729.0,
+"p90": 43600.200000000004,
+"p95": 49334.099999999984,
+"p99": 65519.02,
+"max": 93828,
+"min": 1140,
+"n_over_128k": 0,
+"n_over_32k": 1337
+},
+"placeholder": {
+"n": 1626,
+"median": 30263.5,
+"p90": 46594.0,
+"p95": 56120.75,
+"p99": 75667.5,
+"max": 92707,
+"min": 2756,
+"n_over_128k": 0,
+"n_over_32k": 686
+}
+}
+Traceback (most recent call last):
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g2_prep.py", line 453, in <module>
+    main()
+  File "/workspace/judge-llm-l-probe-experiment-on-linux-arena/experiments/local-monitor-activations/g2_prep.py", line 197, in main
+    assert coef[1] > 0 and coef[2] > 0, coef
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [ 1.45796675e+00 -5.13494363e-05  2.76055876e-08]

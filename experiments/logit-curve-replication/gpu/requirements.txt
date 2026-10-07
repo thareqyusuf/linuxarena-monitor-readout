@@ -1,0 +1,13 @@
+# Pinned to the versions run_monitor.py was tested with on the laptop
+# (CPU, Qwen/Qwen3-0.6B smoke test; see experiments/logit-curve-replication/REPORT.md L4).
+# On the pod install the CUDA build of the same torch version, e.g.
+#   pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.14.0
+transformers==5.17.0
+tokenizers==0.23.2
+accelerate==1.15.0
+safetensors==0.8.0
+numpy==2.5.3
+# gpt-oss-20b ships MXFP4 weights; on A100 (no MXFP4 kernels) transformers
+# dequantises to bf16 (~40 GB). If it asks for `kernels`/`triton`, install
+# `kernels` — not needed for the dequantised path.

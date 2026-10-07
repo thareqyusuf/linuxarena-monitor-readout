@@ -1,0 +1,9 @@
+# Pinned torch stack for /workspace/venv. All three must come from the same
+# PyTorch index (cu130) or the C++ extensions in torchvision/torchaudio fail to
+# load ("operator torchvision::nms does not exist", undefined symbol in
+# libtorchaudio.so). cu130 wheels need NVIDIA driver >= 580.
+# Bump all three together; see https://pytorch.org/get-started/previous-versions/
+torch==2.14.0
+torchvision==0.29.0
+torchaudio==2.11.0
+kernels==0.16.1
